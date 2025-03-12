@@ -1,0 +1,6 @@
+const data = {
+    baseUrl:'http://localhost:7031',
+    token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2EwMTU5ZGQyY2E2NmE3ZjU4ZGI4NSIsInVzZXJfZGV0YWlscyI6ImFkbWluQG1hdXN0YXRzLm9yZyIsInR5cGUiOiJzdXBlckFkbWluIiwibmFtZSI6IkFkbWluIiwicGhvbmUiOiIrOTEgODg2MDcxMDA0OCIsImlhdCI6MTcwMjU0NDU5MCwiZXhwIjoxNzAyNjMwOTkwfQ.kTUs8wjZ8kgTmYIpu2xl-AoVXA8CcgI8LY6MIOzJLlk'
+}
+
+module.exports = data;
