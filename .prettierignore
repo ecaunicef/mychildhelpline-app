@@ -1,0 +1,16 @@
+# Ignore built files
+node_modules
+build
+android
+ios
+__tests__
+.bundle
+assets_1
+.gitignore
+
+# Ignore environment files
+.env
+
+# Ignore lock files
+yarn.lock
+package-lock.json
