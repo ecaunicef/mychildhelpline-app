@@ -1,0 +1,2725 @@
+{
+  "stats": {
+    "suites": 68,
+    "tests": 68,
+    "passes": 65,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-12-14T10:36:19.027Z",
+    "end": "2023-12-14T10:36:21.700Z",
+    "duration": 2673,
+    "testsRegistered": 68,
+    "passPercent": 95.58823529411765,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1fd078cf-7980-4f20-a679-d890b8f1cbac",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dd19d1a2-d96c-4d74-864b-a4723e6e0f84",
+          "title": "GET /area/get-area-data",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/area/area.test.js",
+          "file": "/test/area/area.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns get area ",
+              "fullTitle": "GET /area/get-area-data returns get area ",
+              "timedOut": false,
+              "duration": 55,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-area-data\")\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "c4ec6b35-26e3-49d8-8b2a-2114d1895bbd",
+              "parentUUID": "dd19d1a2-d96c-4d74-864b-a4723e6e0f84",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c4ec6b35-26e3-49d8-8b2a-2114d1895bbd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 55,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ae22ef7d-a755-488c-8195-32b23160a93b",
+          "title": "GET /area/getAreaDataForUsers",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/area/area.test.js",
+          "file": "/test/area/area.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns area data for users",
+              "fullTitle": "GET /area/getAreaDataForUsers returns area data for users",
+              "timedOut": false,
+              "duration": 61,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/getAreaDataForUsers\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "ac569f9c-82f2-4adc-ab4d-4ad9c3a0cc90",
+              "parentUUID": "ae22ef7d-a755-488c-8195-32b23160a93b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ac569f9c-82f2-4adc-ab4d-4ad9c3a0cc90"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 61,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "66ef7be1-ad8a-4afb-bf7a-cd480312ec03",
+          "title": "GET /area/getAreaDataSort",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/area/area.test.js",
+          "file": "/test/area/area.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns area data sort",
+              "fullTitle": "GET /area/getAreaDataSort returns area data sort",
+              "timedOut": false,
+              "duration": 42,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/getAreaDataSort\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "8802407e-0875-407e-98af-94f7ca6fd4bb",
+              "parentUUID": "66ef7be1-ad8a-4afb-bf7a-cd480312ec03",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8802407e-0875-407e-98af-94f7ca6fd4bb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 42,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "347233cd-7588-4807-ad92-fa3b8608bb09",
+          "title": "GET /area/getdistrictAreaDataSort",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/area/area.test.js",
+          "file": "/test/area/area.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns area district data sort",
+              "fullTitle": "GET /area/getdistrictAreaDataSort returns area district data sort",
+              "timedOut": false,
+              "duration": 7,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/getdistrictAreaDataSort\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "c32b0227-c49d-41e9-b709-beedf49cd8e2",
+              "parentUUID": "347233cd-7588-4807-ad92-fa3b8608bb09",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c32b0227-c49d-41e9-b709-beedf49cd8e2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "13f20fd6-bc73-4029-851f-d03b4caaf98b",
+          "title": "GET /area/get-area-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/area/area.test.js",
+          "file": "/test/area/area.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns area list",
+              "fullTitle": "GET /area/get-area-list returns area list",
+              "timedOut": false,
+              "duration": 53,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-area-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "233bd8df-5c90-4857-944f-17e0ae2fda9f",
+              "parentUUID": "13f20fd6-bc73-4029-851f-d03b4caaf98b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "233bd8df-5c90-4857-944f-17e0ae2fda9f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 53,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ebbe6d85-d28c-4136-97a7-0f81fbfb5eb0",
+          "title": "GET/category-master/get-file-data",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/categoryMaster/categoryMaster.test.js",
+          "file": "/test/categoryMaster/categoryMaster.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all fileData",
+              "fullTitle": "GET/category-master/get-file-data returns all fileData",
+              "timedOut": false,
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-file-data\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "473a9728-0b6d-436d-8ebc-b4b2e9594679",
+              "parentUUID": "ebbe6d85-d28c-4136-97a7-0f81fbfb5eb0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "473a9728-0b6d-436d-8ebc-b4b2e9594679"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d69189a1-c793-4b89-9254-4c7d3095c4a8",
+          "title": "GET/category-master/get-list-by-key",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/categoryMaster/categoryMaster.test.js",
+          "file": "/test/categoryMaster/categoryMaster.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "return list by key",
+              "fullTitle": "GET/category-master/get-list-by-key return list by key",
+              "timedOut": false,
+              "duration": 109,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-list-by-key\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "8dd153aa-6c3d-4073-a9ae-a8810e49ea1a",
+              "parentUUID": "d69189a1-c793-4b89-9254-4c7d3095c4a8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8dd153aa-6c3d-4073-a9ae-a8810e49ea1a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 109,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2546a42c-23ba-4b0a-87f1-15f2eb95f521",
+          "title": "GET/category-master/get-file-data",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/categoryMaster/categoryMaster.test.js",
+          "file": "/test/categoryMaster/categoryMaster.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "return list by key",
+              "fullTitle": "GET/category-master/get-file-data return list by key",
+              "timedOut": false,
+              "duration": 16,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-file-data\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "7c85dd0a-3d35-4832-9ea8-26a1b9372ceb",
+              "parentUUID": "2546a42c-23ba-4b0a-87f1-15f2eb95f521",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7c85dd0a-3d35-4832-9ea8-26a1b9372ceb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "625d31e6-4902-4927-878d-02e7c572bb87",
+          "title": "GET/category-master/get-all-categorylist",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/categoryMaster/categoryMaster.test.js",
+          "file": "/test/categoryMaster/categoryMaster.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "return list by key",
+              "fullTitle": "GET/category-master/get-all-categorylist return list by key",
+              "timedOut": false,
+              "duration": 54,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-all-categorylist\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "b5b588f1-fe11-4d85-8c40-356ecebcb31e",
+              "parentUUID": "625d31e6-4902-4927-878d-02e7c572bb87",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b5b588f1-fe11-4d85-8c40-356ecebcb31e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 54,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "284b2f17-bc59-495f-904f-9289a6f37f4d",
+          "title": "GET /data-exchange/get-mapping-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/data-exchange/dataExchange.test.js",
+          "file": "/test/data-exchange/dataExchange.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get all mapping list",
+              "fullTitle": "GET /data-exchange/get-mapping-list get all mapping list",
+              "timedOut": false,
+              "duration": 7,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-mapping-list\")\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "a6e8db74-bcad-46cd-9f44-487fe3859c44",
+              "parentUUID": "284b2f17-bc59-495f-904f-9289a6f37f4d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a6e8db74-bcad-46cd-9f44-487fe3859c44"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d7d7cf7b-fa77-44b4-8661-afccd85b5629",
+          "title": "GET /data-exchange/get-processed-import-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/data-exchange/dataExchange.test.js",
+          "file": "/test/data-exchange/dataExchange.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get processed import list",
+              "fullTitle": "GET /data-exchange/get-processed-import-list get processed import list",
+              "timedOut": false,
+              "duration": 11,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-processed-import-list\")\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "ce4a7e61-2898-4343-9108-c562e454b9ce",
+              "parentUUID": "d7d7cf7b-fa77-44b4-8661-afccd85b5629",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce4a7e61-2898-4343-9108-c562e454b9ce"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "36cf02b8-4d8b-4d31-b943-49c336bae2c9",
+          "title": "GET /enterprise/get-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/enterprise/enterprise.test.js",
+          "file": "/test/enterprise/enterprise.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 400 Unauthorized without authentication",
+              "fullTitle": "GET /enterprise/get-list returns 400 Unauthorized without authentication",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-list\")\n        .expect(400);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "98644079-5c0f-4e59-b438-35b8bfd44115",
+              "parentUUID": "36cf02b8-4d8b-4d31-b943-49c336bae2c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "98644079-5c0f-4e59-b438-35b8bfd44115"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ccf1a492-66e9-4bb6-8ddb-814201234dfa",
+          "title": "GET /enterprise/get-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/enterprise/enterprise.test.js",
+          "file": "/test/enterprise/enterprise.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all enterprise",
+              "fullTitle": "GET /enterprise/get-list returns all enterprise",
+              "timedOut": false,
+              "duration": 7,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "a3e06d5c-fb35-40b6-a816-5e1e398703eb",
+              "parentUUID": "ccf1a492-66e9-4bb6-8ddb-814201234dfa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a3e06d5c-fb35-40b6-a816-5e1e398703eb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "6d53ad78-1612-4ba4-bf02-ff212da11741",
+          "title": "GET /enterprise/get-mappings",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/enterprise/enterprise.test.js",
+          "file": "/test/enterprise/enterprise.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all mapping",
+              "fullTitle": "GET /enterprise/get-mappings returns all mapping",
+              "timedOut": false,
+              "duration": 54,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-mappings\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "853b90b8-e524-4834-b3e9-e3b9bea14c8f",
+              "parentUUID": "6d53ad78-1612-4ba4-bf02-ff212da11741",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "853b90b8-e524-4834-b3e9-e3b9bea14c8f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 54,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "be051fbc-ee6d-4ccb-81d6-c409714c6625",
+          "title": "GET /enterprise/get-precedence-data",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/enterprise/enterprise.test.js",
+          "file": "/test/enterprise/enterprise.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all precedence",
+              "fullTitle": "GET /enterprise/get-precedence-data returns all precedence",
+              "timedOut": false,
+              "duration": 5,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-precedence-data\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "0c2b7b5c-6023-4750-88f3-6e8c1c979ec5",
+              "parentUUID": "be051fbc-ee6d-4ccb-81d6-c409714c6625",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c2b7b5c-6023-4750-88f3-6e8c1c979ec5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "cc76f6bc-ed5d-41c4-8109-b8ec71442807",
+          "title": "GET/establishment/get-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/establishment/establishment.test.js",
+          "file": "/test/establishment/establishment.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 400 Unauthorized without authentication",
+              "fullTitle": "GET/establishment/get-list returns 400 Unauthorized without authentication",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-list\")\n        .expect(400);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "516712a7-9982-4835-bd48-82af101fe842",
+              "parentUUID": "cc76f6bc-ed5d-41c4-8109-b8ec71442807",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "516712a7-9982-4835-bd48-82af101fe842"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2a2af550-6254-4b97-a9b1-d01e1473b81f",
+          "title": "GET/establishment/get-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/establishment/establishment.test.js",
+          "file": "/test/establishment/establishment.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all establishment",
+              "fullTitle": "GET/establishment/get-list returns all establishment",
+              "timedOut": false,
+              "duration": 9,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "46dc161b-998e-4720-967c-b378d69525ea",
+              "parentUUID": "2a2af550-6254-4b97-a9b1-d01e1473b81f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "46dc161b-998e-4720-967c-b378d69525ea"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "09bd39bc-02a5-4c7f-90bb-3829cf7acff3",
+          "title": "GET/establishment/get-precedence-data",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/establishment/establishment.test.js",
+          "file": "/test/establishment/establishment.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all precedence",
+              "fullTitle": "GET/establishment/get-precedence-data returns all precedence",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-precedence-data\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "f65a7b20-0457-428e-82f4-455e2e1c38ca",
+              "parentUUID": "09bd39bc-02a5-4c7f-90bb-3829cf7acff3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f65a7b20-0457-428e-82f4-455e2e1c38ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "fd44e571-1a2c-473f-b5cf-6658466cc1fd",
+          "title": "GET /general-mapping/list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/generalMapping/generalmapping.test.js",
+          "file": "/test/generalMapping/generalmapping.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get general mapping list",
+              "fullTitle": "GET /general-mapping/list get general mapping list",
+              "timedOut": false,
+              "duration": 9,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "ed58217f-cbce-4473-a20e-8a1647c6bdf4",
+              "parentUUID": "fd44e571-1a2c-473f-b5cf-6658466cc1fd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ed58217f-cbce-4473-a20e-8a1647c6bdf4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d95e32a9-92ae-4b3c-8821-eecc3c5c4d79",
+          "title": "GET /general-mapping/get-survey-Questionnaire",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/generalMapping/generalmapping.test.js",
+          "file": "/test/generalMapping/generalmapping.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get survey Questionnaire",
+              "fullTitle": "GET /general-mapping/get-survey-Questionnaire get survey Questionnaire",
+              "timedOut": false,
+              "duration": 11,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-survey-Questionnaire\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "2c73b8e3-90c9-4c28-bb19-e0dcf6fe0a11",
+              "parentUUID": "d95e32a9-92ae-4b3c-8821-eecc3c5c4d79",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2c73b8e3-90c9-4c28-bb19-e0dcf6fe0a11"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3415d6f9-daf6-450a-858d-f9200b6d7439",
+          "title": "GET /gisData/list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/gismap/gismap.test.js",
+          "file": "/test/gismap/gismap.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns get gis-map list",
+              "fullTitle": "GET /gisData/list returns get gis-map list",
+              "timedOut": false,
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "c2cb39a1-a3d8-4a01-80d1-055278fe92b2",
+              "parentUUID": "3415d6f9-daf6-450a-858d-f9200b6d7439",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c2cb39a1-a3d8-4a01-80d1-055278fe92b2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "fba09c72-1fc5-4b39-a9a6-bb14c257c025",
+          "title": "POST /manage-goal/list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/goalTarget/goalTarget.test.js",
+          "file": "/test/goalTarget/goalTarget.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "sector list",
+              "fullTitle": "POST /manage-goal/list sector list",
+              "timedOut": false,
+              "duration": 21,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const payload = {\n        \"size\": 0,\n        \"totalElements\": 0,\n        \"totalPages\": 0,\n        \"pageNumber\": 0,\n        \"filterKeyWord\": \"\",\n        \"startOffset\": 0,\n        \"endOffset\": 0\n    };\n    const response = await api\n        .post(\"/list\")\n        .send(payload)\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n    // console.log(response.body);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "05b25431-fc92-4f88-a921-a48fe5787535",
+              "parentUUID": "fba09c72-1fc5-4b39-a9a6-bb14c257c025",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "05b25431-fc92-4f88-a921-a48fe5787535"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "54b7c961-efc2-4596-bac0-451360280147",
+          "title": "GET/ius/get-indiacator-subGroup",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all indiacator subgroup",
+              "fullTitle": "GET/ius/get-indiacator-subGroup returns all indiacator subgroup",
+              "timedOut": false,
+              "duration": 486,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-indiacator-subGroup\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "df01337c-0985-49f0-bc6f-ff67d69febff",
+              "parentUUID": "54b7c961-efc2-4596-bac0-451360280147",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "df01337c-0985-49f0-bc6f-ff67d69febff"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 486,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3d1b17cc-2074-4129-b5fa-332003f2640b",
+          "title": "GET/ius/get-indiacator-classification",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all indiacator classification",
+              "fullTitle": "GET/ius/get-indiacator-classification returns all indiacator classification",
+              "timedOut": false,
+              "duration": 485,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-indiacator-classification\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "06c22925-59f7-4459-8c86-3fd73f601d26",
+              "parentUUID": "3d1b17cc-2074-4129-b5fa-332003f2640b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "06c22925-59f7-4459-8c86-3fd73f601d26"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 485,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3f8b8e69-56c2-4b51-b594-026f7875bc67",
+          "title": "GET/ius/get-indicator-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all indicator list",
+              "fullTitle": "GET/ius/get-indicator-list returns all indicator list",
+              "timedOut": false,
+              "duration": 188,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-indicator-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "da65c735-6ca2-4771-9f31-6c1652f12c12",
+              "parentUUID": "3f8b8e69-56c2-4b51-b594-026f7875bc67",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "da65c735-6ca2-4771-9f31-6c1652f12c12"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 188,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "a277dfa5-a71c-4dd8-b12b-eab2fcea91a3",
+          "title": "GET/ius/get-monitoring-data",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all monitoring data",
+              "fullTitle": "GET/ius/get-monitoring-data returns all monitoring data",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-monitoring-data\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "def53677-bce6-403d-94d1-d36774edd102",
+              "parentUUID": "a277dfa5-a71c-4dd8-b12b-eab2fcea91a3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "def53677-bce6-403d-94d1-d36774edd102"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f41a0c73-1592-411f-ade6-3494f9642bdc",
+          "title": "GET/ius/get-all-indicator-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all indicator list",
+              "fullTitle": "GET/ius/get-all-indicator-list returns all indicator list",
+              "timedOut": false,
+              "duration": 33,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-all-indicator-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "216b4001-247c-4540-974b-025e0280191e",
+              "parentUUID": "f41a0c73-1592-411f-ade6-3494f9642bdc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "216b4001-247c-4540-974b-025e0280191e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 33,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4431fb47-0e0a-46e5-984f-c49368677ff2",
+          "title": "GET/ius/get-ius-maping",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all ius maping",
+              "fullTitle": "GET/ius/get-ius-maping returns all ius maping",
+              "timedOut": false,
+              "duration": 333,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-ius-maping\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "56e1a24b-4371-4f74-a44e-d938e41ff860",
+              "parentUUID": "4431fb47-0e0a-46e5-984f-c49368677ff2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "56e1a24b-4371-4f74-a44e-d938e41ff860"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 333,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "113e678d-92e3-4300-a5c5-e655b7cf5d56",
+          "title": "GET/ius/get-iu-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all iu list",
+              "fullTitle": "GET/ius/get-iu-list returns all iu list",
+              "timedOut": false,
+              "duration": 18,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-iu-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "bd0c06cf-1cad-4cb8-a9ba-2dcaab02b59b",
+              "parentUUID": "113e678d-92e3-4300-a5c5-e655b7cf5d56",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bd0c06cf-1cad-4cb8-a9ba-2dcaab02b59b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0fe49914-7f3d-4e4e-9fdb-c7787983c293",
+          "title": "GET/ius/get-framework-indicatorlist",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all framework indicator list",
+              "fullTitle": "GET/ius/get-framework-indicatorlist returns all framework indicator list",
+              "timedOut": false,
+              "duration": 9,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-framework-indicatorlist\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "a0eed30f-06aa-4d54-a2a3-b69be8d17435",
+              "parentUUID": "0fe49914-7f3d-4e4e-9fdb-c7787983c293",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a0eed30f-06aa-4d54-a2a3-b69be8d17435"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8cc99113-e58f-4e35-9da8-4d9cd5559ef7",
+          "title": "GET/ius/getFrameworkIusListNumber",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all framework ius list",
+              "fullTitle": "GET/ius/getFrameworkIusListNumber returns all framework ius list",
+              "timedOut": false,
+              "duration": 33,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/getFrameworkIusListNumber\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "17a0e22c-2117-4d70-bcea-e281d8b59b96",
+              "parentUUID": "8cc99113-e58f-4e35-9da8-4d9cd5559ef7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "17a0e22c-2117-4d70-bcea-e281d8b59b96"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 33,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d3e01337-04e9-49bc-97f4-23fe098bfd13",
+          "title": "GET/ius/indicator-unit-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all indicator unit list",
+              "fullTitle": "GET/ius/indicator-unit-list returns all indicator unit list",
+              "timedOut": false,
+              "duration": 23,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/indicator-unit-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "067f1e19-6376-497e-8b69-17d0924c62f9",
+              "parentUUID": "d3e01337-04e9-49bc-97f4-23fe098bfd13",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "067f1e19-6376-497e-8b69-17d0924c62f9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "73d20fe4-3ce5-4030-a7b4-56074fab4be0",
+          "title": "GET/ius/get-subgroup",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all subgroup",
+              "fullTitle": "GET/ius/get-subgroup returns all subgroup",
+              "timedOut": false,
+              "duration": 63,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-subgroup\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "50ecae6e-c4c1-405f-b060-06b351e82de2",
+              "parentUUID": "73d20fe4-3ce5-4030-a7b4-56074fab4be0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "50ecae6e-c4c1-405f-b060-06b351e82de2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 63,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b04d800c-21bc-406c-9b3f-59a79c4ffe7a",
+          "title": "GET/ius/get-sector-goal",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all sector goal",
+              "fullTitle": "GET/ius/get-sector-goal returns all sector goal",
+              "timedOut": false,
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-sector-goal\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "74d30d31-4ec3-4070-9105-4029c2529b4b",
+              "parentUUID": "b04d800c-21bc-406c-9b3f-59a79c4ffe7a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "74d30d31-4ec3-4070-9105-4029c2529b4b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "283205b4-4cd8-4ebc-a9f2-17cd0a1d5467",
+          "title": "GET/ius/indicator-unit-subgroup-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all indicator unit subgroup list",
+              "fullTitle": "GET/ius/indicator-unit-subgroup-list returns all indicator unit subgroup list",
+              "timedOut": false,
+              "duration": 22,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/indicator-unit-subgroup-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "70902e01-8d9b-4813-88de-64aa8617c1bf",
+              "parentUUID": "283205b4-4cd8-4ebc-a9f2-17cd0a1d5467",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "70902e01-8d9b-4813-88de-64aa8617c1bf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "60f61829-cdb9-4123-ad22-948332fe3854",
+          "title": "GET/ius/get-indicator-unit",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all indicator unit",
+              "fullTitle": "GET/ius/get-indicator-unit returns all indicator unit",
+              "timedOut": false,
+              "duration": 11,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-indicator-unit\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "7419921f-e44e-4c79-b0d4-759b5b620ceb",
+              "parentUUID": "60f61829-cdb9-4123-ad22-948332fe3854",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7419921f-e44e-4c79-b0d4-759b5b620ceb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "575b689d-1a8d-4460-b88f-f4f8d75bfb9c",
+          "title": "GET/ius/get-form-ius-maping",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/ius/ius.test.js",
+          "file": "/test/ius/ius.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all form ius maping",
+              "fullTitle": "GET/ius/get-form-ius-maping returns all form ius maping",
+              "timedOut": false,
+              "duration": 21,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-form-ius-maping\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "09474fc8-be76-4054-848b-ba0d3ae094a2",
+              "parentUUID": "575b689d-1a8d-4460-b88f-f4f8d75bfb9c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "09474fc8-be76-4054-848b-ba0d3ae094a2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3dcf09b4-afe0-4225-a308-1ba36358b558",
+          "title": "GET /key-facts/data",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/keyfacts/keyfacts.test.js",
+          "file": "/test/keyfacts/keyfacts.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns get file data",
+              "fullTitle": "GET /key-facts/data returns get file data",
+              "timedOut": false,
+              "duration": 26,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/data\")\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "690d3106-d2be-4cd4-87eb-32c915427630",
+              "parentUUID": "3dcf09b4-afe0-4225-a308-1ba36358b558",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "690d3106-d2be-4cd4-87eb-32c915427630"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "6ea444e5-c988-49c6-a8b8-3054ce8fc78c",
+          "title": "POST /manage-rule/get-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/manageRule/managerule.test.js",
+          "file": "/test/manageRule/managerule.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "manage rule list",
+              "fullTitle": "POST /manage-rule/get-list manage rule list",
+              "timedOut": false,
+              "duration": 9,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const payload = {\n        \"size\": 10,\n        \"totalElements\": 0,\n        \"totalPages\": 0,\n        \"pageNumber\": 0,\n        \"startOffset\": 0,\n        \"endOffset\": 0\n    };\n    const response = await api\n        .post(\"/get-list\")\n        .send(payload)\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n    // console.log(response.body);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "06def4f3-51b9-4bf1-bdd5-4f8d290cec51",
+              "parentUUID": "6ea444e5-c988-49c6-a8b8-3054ce8fc78c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "06def4f3-51b9-4bf1-bdd5-4f8d290cec51"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2cc03394-30e8-4252-b6f9-b7727720eb38",
+          "title": "POST /metadata/get-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/metadata/metadata.test.js",
+          "file": "/test/metadata/metadata.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "metadata list",
+              "fullTitle": "POST /metadata/get-list metadata list",
+              "timedOut": false,
+              "duration": 10,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const payload = {\n    };\n    const response = await api\n        .post(\"/get-list\")\n        .send(payload)\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n    // console.log(response.body);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "cbe7ebcc-a72c-4f85-a07b-eb43ce0f7d2f",
+              "parentUUID": "2cc03394-30e8-4252-b6f9-b7727720eb38",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cbe7ebcc-a72c-4f85-a07b-eb43ce0f7d2f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5de3c36b-565b-40eb-9f0f-ba5a3845b676",
+          "title": "GET/role-permission/list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/rolePermissions/rolePermissions.test.js",
+          "file": "/test/rolePermissions/rolePermissions.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns role permission",
+              "fullTitle": "GET/role-permission/list returns role permission",
+              "timedOut": false,
+              "duration": 8,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "aadf51a3-c11d-441e-87f1-060fde292cdd",
+              "parentUUID": "5de3c36b-565b-40eb-9f0f-ba5a3845b676",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aadf51a3-c11d-441e-87f1-060fde292cdd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "662a5b06-ef4e-4a53-a409-9aa9b78715e1",
+          "title": "GET/role-permission/getFiles",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/rolePermissions/rolePermissions.test.js",
+          "file": "/test/rolePermissions/rolePermissions.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns role permission",
+              "fullTitle": "GET/role-permission/getFiles returns role permission",
+              "timedOut": false,
+              "duration": 5,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/getFiles\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "89b853df-d245-4a90-9845-8568869d346c",
+              "parentUUID": "662a5b06-ef4e-4a53-a409-9aa9b78715e1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "89b853df-d245-4a90-9845-8568869d346c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ac8e54f9-7cdd-44a1-8d96-bd48a890de58",
+          "title": "POST /manage-sector/list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/sectorSubsector/sectorSubsector.test.js",
+          "file": "/test/sectorSubsector/sectorSubsector.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "sector list",
+              "fullTitle": "POST /manage-sector/list sector list",
+              "timedOut": false,
+              "duration": 13,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const payload = {\n        \"size\": 0,\n        \"totalElements\": 0,\n        \"totalPages\": 0,\n        \"pageNumber\": 0,\n        \"filterKeyWord\": \"\",\n        \"startOffset\": 0,\n        \"endOffset\": 0\n    };\n    const response = await api\n        .post(\"/list\")\n        .send(payload)\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n    // console.log(response.body);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "2a2ff785-91e7-421d-a103-1416af786f5d",
+              "parentUUID": "ac8e54f9-7cdd-44a1-8d96-bd48a890de58",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2a2ff785-91e7-421d-a103-1416af786f5d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "a16f64da-448a-454a-858a-cfd8288d28db",
+          "title": "GET source/list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/source/source.test.js",
+          "file": "/test/source/source.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get source list",
+              "fullTitle": "GET source/list get source list",
+              "timedOut": false,
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "0bdf7599-5a31-4f24-812a-21afb7237f9e",
+              "parentUUID": "a16f64da-448a-454a-858a-cfd8288d28db",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0bdf7599-5a31-4f24-812a-21afb7237f9e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4c0623a9-af95-4e5d-942d-b393a711de1d",
+          "title": "POST calculation/get-calculation-data",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/calculation.test.js",
+          "file": "/test/survey/calculation.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "STATUS 200,returns  list of all calculation data by given suveyId ",
+              "fullTitle": "POST calculation/get-calculation-data STATUS 200,returns  list of all calculation data by given suveyId ",
+              "timedOut": false,
+              "duration": 8,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    let obj = {\n        survey_id: \"65639887af0e9514d68e9671\"\n    };\n      let  res=await supertest\n          .post(\"/calculation/get-calculation-data\", obj)\n        .expect(200);\n    expect(res.body.data).to.have.lengthOf(0);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "4bc4679e-82fc-4239-b27d-89f5c7f7a2c8",
+              "parentUUID": "4c0623a9-af95-4e5d-942d-b393a711de1d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4bc4679e-82fc-4239-b27d-89f5c7f7a2c8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "991c5d9a-ad2c-42a6-a873-c8cca66dcd1f",
+          "title": "POST option/get-list-by-category",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/calculation.test.js",
+          "file": "/test/survey/calculation.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return list of categories which has status true",
+              "fullTitle": "POST option/get-list-by-category should return list of categories which has status true",
+              "timedOut": false,
+              "duration": 13,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    let res = await supertest\n        .post('/option/get-list-by-category', { category_key: \"all\" })\n        .expect(200)\n        .expect('Content-Type', /json/)\n        .expect((res) => {\n            if (!Array.isArray(res.body.data)) {\n                throw new Error('Categories should be an array');\n            }\n        });\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "e68d5adc-0715-4a04-b136-f30c09f912b7",
+              "parentUUID": "991c5d9a-ad2c-42a6-a873-c8cca66dcd1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e68d5adc-0715-4a04-b136-f30c09f912b7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "aa8b1732-d101-4334-bcfa-90793f6c9b4e",
+          "title": "GET primary-plan/get-plans-by-surveyid",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/manger.test.js",
+          "file": "/test/survey/manger.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 400 Unauthorized without authentication",
+              "fullTitle": "GET primary-plan/get-plans-by-surveyid returns 400 Unauthorized without authentication",
+              "timedOut": false,
+              "duration": 3,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .post(\"/get-plans-by-surveyid\")\n        .expect(400);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "21a8e248-7fab-414c-a823-8e7d36494528",
+              "parentUUID": "aa8b1732-d101-4334-bcfa-90793f6c9b4e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "21a8e248-7fab-414c-a823-8e7d36494528"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "41240544-9b91-46d9-9f4d-fdb22d9372ae",
+          "title": "GET primary-plan/get-plans-by-surveyid",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/manger.test.js",
+          "file": "/test/survey/manger.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 200 if get data of given survey_id and status code",
+              "fullTitle": "GET primary-plan/get-plans-by-surveyid returns 200 if get data of given survey_id and status code",
+              "timedOut": false,
+              "duration": 10,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const payload = {\n        status:1,\n        survey_id: ObjectId(\"657a95a3c60b82098da06396\")\n    };\n    const response = await supertest\n        .post(\"/get-plans-by-surveyid\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .send(payload) \n        .expect(200);\n    expect(response.body).to.have.property('data').that.is.an('array').with.length.greaterThan(0);\n} catch (error) {\n    throw error;\n}",
+              "err": {
+                "message": "AssertionError: expected [] to have a length above +0 but got +0",
+                "estack": "AssertionError: expected [] to have a length above +0 but got +0\n    at Context.<anonymous> (test/survey/manger.test.js:36:92)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": ""
+              },
+              "uuid": "7fe3df1d-d36a-4788-acf3-f5067ee62297",
+              "parentUUID": "41240544-9b91-46d9-9f4d-fdb22d9372ae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7fe3df1d-d36a-4788-acf3-f5067ee62297"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "dbb07b56-3bd9-4214-acb8-6f94bb43c0c1",
+          "title": "GET primary-plan/get-view-by-planid",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/manger.test.js",
+          "file": "/test/survey/manger.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 200 if get data of given id",
+              "fullTitle": "GET primary-plan/get-view-by-planid returns 200 if get data of given id",
+              "timedOut": false,
+              "duration": 8,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-view-by-planid/657a961bc60b82098da063f9\")\n        .expect(200);\n    expect(response.body).to.have.property('plan').that.is.an('array').with.length.greaterThan(0);\n   \n} catch (error) {\n    throw error;\n}",
+              "err": {
+                "message": "AssertionError: expected [] to have a length above +0 but got +0",
+                "estack": "AssertionError: expected [] to have a length above +0 but got +0\n    at Context.<anonymous> (test/survey/manger.test.js:50:92)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": ""
+              },
+              "uuid": "38b3fc23-6b79-4ced-b470-78624c19aec6",
+              "parentUUID": "dbb07b56-3bd9-4214-acb8-6f94bb43c0c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "38b3fc23-6b79-4ced-b470-78624c19aec6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0305e29e-dacb-4375-9ce0-363fefe06bd7",
+          "title": "GET primary-plan/get-data-entry-questionlist",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/manger.test.js",
+          "file": "/test/survey/manger.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 200 if get question list of given survey",
+              "fullTitle": "GET primary-plan/get-data-entry-questionlist returns 200 if get question list of given survey",
+              "timedOut": false,
+              "duration": 15,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const payload = {\n        establishment_id:\"657000cfb76573fd6baf78ad\",\n        plan_id :\"657a961bc60b82098da063f9\",\n        survey_id:\"657a95a3c60b82098da06396\"\n    };\n    const response = await supertest\n        .post(\"/get-data-entry-questionlist\")\n        .send(payload)\n        .expect(200);\n    expect(response.body).to.have.property('optionData').that.is.an('array');\n    expect(response.body).to.have.property('quesData').that.is.an('object');\n    expect(response.body).to.have.property('survey_record').that.is.an('object');\n} catch (error) {\n    throw error;\n}",
+              "err": {
+                "message": "AssertionError: expected null to be an object",
+                "estack": "AssertionError: expected null to be an object\n    at Context.<anonymous> (test/survey/manger.test.js:75:77)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "fd26e864-5973-4383-b39e-fcc20b3856ac",
+              "parentUUID": "0305e29e-dacb-4375-9ce0-363fefe06bd7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fd26e864-5973-4383-b39e-fcc20b3856ac"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f54bf566-8dcb-4691-a2ff-0a2e1ebe1aae",
+          "title": "GET primary-plan/get-data-summary-by-planid",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/manger.test.js",
+          "file": "/test/survey/manger.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 400 Unauthorized without authentication",
+              "fullTitle": "GET primary-plan/get-data-summary-by-planid returns 400 Unauthorized without authentication",
+              "timedOut": false,
+              "duration": 3,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-data-summary-by-planid/657a961bc60b82098da063f9\")\n        .expect(400);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "fb90d94e-ebba-47ca-8032-2c5332c84a9c",
+              "parentUUID": "f54bf566-8dcb-4691-a2ff-0a2e1ebe1aae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fb90d94e-ebba-47ca-8032-2c5332c84a9c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b19c07a3-9510-42f0-b2fd-5b337e295ec1",
+          "title": "GET primary-plan/get-data-summary-by-planid",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/manger.test.js",
+          "file": "/test/survey/manger.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 200 if we get data",
+              "fullTitle": "GET primary-plan/get-data-summary-by-planid returns 200 if we get data",
+              "timedOut": false,
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-data-summary-by-planid/657a961bc60b82098da063f9\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200)\n        .expect('Content-Type', /json/)\n        .expect((res) => {\n            if (!Array.isArray(res.body) && res.body.length == 0) {\n                throw new Error('data should be in an array and its length should be greater 0');\n            }\n        });\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "769338b7-c967-4cc0-9955-af4b21191998",
+              "parentUUID": "b19c07a3-9510-42f0-b2fd-5b337e295ec1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "769338b7-c967-4cc0-9955-af4b21191998"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1c924a49-faf9-4998-9961-c75dcfaf8b04",
+          "title": "GET survey/get-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/questionnarie.test.js",
+          "file": "/test/survey/questionnarie.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 400 Unauthorized without authentication",
+              "fullTitle": "GET survey/get-list returns 400 Unauthorized without authentication",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-list\")\n        .expect(400);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "687c8e46-4151-41f1-b83c-5051690bed41",
+              "parentUUID": "1c924a49-faf9-4998-9961-c75dcfaf8b04",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "687c8e46-4151-41f1-b83c-5051690bed41"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4953aed2-063f-4087-915e-80e78ae7a8c9",
+          "title": "GET survey/get-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/questionnarie.test.js",
+          "file": "/test/survey/questionnarie.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all survey",
+              "fullTitle": "GET survey/get-list returns all survey",
+              "timedOut": false,
+              "duration": 7,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "e0f31123-1246-4300-b85d-ba2e6fa827ef",
+              "parentUUID": "4953aed2-063f-4087-915e-80e78ae7a8c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e0f31123-1246-4300-b85d-ba2e6fa827ef"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "018bd313-93f3-4187-adec-f8f15718dc91",
+          "title": "GET survey/get-all-data-entry-user",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/questionnarie.test.js",
+          "file": "/test/survey/questionnarie.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all data entry user",
+              "fullTitle": "GET survey/get-all-data-entry-user returns all data entry user",
+              "timedOut": false,
+              "duration": 32,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try{\n    const response=await supertest\n    .get('/get-all-data-entry-user') \n    .expect(200);             \n}catch(error){\n    throw error;\n}",
+              "err": {},
+              "uuid": "e7edde21-fbec-4289-a16f-b3886223e474",
+              "parentUUID": "018bd313-93f3-4187-adec-f8f15718dc91",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e7edde21-fbec-4289-a16f-b3886223e474"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 32,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "bc03df9c-080b-4cee-b36d-4a4861021a4a",
+          "title": "GET survey/get-survey-data-entry-user",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/questionnarie.test.js",
+          "file": "/test/survey/questionnarie.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all survey data entry user",
+              "fullTitle": "GET survey/get-survey-data-entry-user returns all survey data entry user",
+              "timedOut": false,
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try{\n    await supertest\n        .get('/get-survey-data-entry-user')\n        .expect(200)\n}catch(error){\n    throw new Error(error)\n}",
+              "err": {},
+              "uuid": "0975e1dd-920e-4404-8d8f-2258c2a292a4",
+              "parentUUID": "bc03df9c-080b-4cee-b36d-4a4861021a4a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0975e1dd-920e-4404-8d8f-2258c2a292a4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8e9a0fca-f1f7-4022-b4d2-ca284a51db35",
+          "title": "GET survey/get-survey-by-id/:surveyId",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/questionnarie.test.js",
+          "file": "/test/survey/questionnarie.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all questions list by given form id",
+              "fullTitle": "GET survey/get-survey-by-id/:surveyId returns all questions list by given form id",
+              "timedOut": false,
+              "duration": 26,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let id = \"65639887af0e9514d68e9671\";\ntry {\n     let res=await supertest\n        .get(`/get-survey-by-id/${id}`)\n        .expect(200);\n        expect((res) => {\n        // Assuming createdAt is a Date object in your response\n        const createdAtDate = new Date(res.body.survey.createdAt);\n        const currentDate = new Date();\n        // Asserting that createdAt is less than the current date\n        if (createdAtDate >= currentDate) {\n         throw new Error('createdAt should be less than the current date');\n        }\n    });\n} catch (e) {\n    throw new Error(e);\n}",
+              "err": {},
+              "uuid": "3b7bd2ca-676f-47b1-ad9e-454f52279bd4",
+              "parentUUID": "8e9a0fca-f1f7-4022-b4d2-ca284a51db35",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3b7bd2ca-676f-47b1-ad9e-454f52279bd4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7130a304-d72c-44cf-9ba3-59dd81346b63",
+          "title": "POST survey/get-questions-list-by-survey-id",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/survey/questionnarie.test.js",
+          "file": "/test/survey/questionnarie.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "STATUS 200,returns where success is equal to true",
+              "fullTitle": "POST survey/get-questions-list-by-survey-id STATUS 200,returns where success is equal to true",
+              "timedOut": false,
+              "duration": 5,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    let obj = {\n        survey_id: \"65639887af0e9514d68e9671\"\n    };\n      let response=await supertest.post('/get-questions-list-by-survey-id', obj);\n        expect(response.body.success).to.equal(true);\n    } catch (err) {\n    throw new Error(err);\n}",
+              "err": {},
+              "uuid": "76c0fc92-23b2-402f-aab1-d23150c0435a",
+              "parentUUID": "7130a304-d72c-44cf-9ba3-59dd81346b63",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "76c0fc92-23b2-402f-aab1-d23150c0435a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "678b9ce8-5c75-4dd0-b535-8af2ade27705",
+          "title": "GET timePeriod/list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/timePeriod/timePeriod.test.js",
+          "file": "/test/timePeriod/timePeriod.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get source list",
+              "fullTitle": "GET timePeriod/list get source list",
+              "timedOut": false,
+              "duration": 7,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "1e5e04f2-7973-40a9-85de-b6dd51366402",
+              "parentUUID": "678b9ce8-5c75-4dd0-b535-8af2ade27705",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1e5e04f2-7973-40a9-85de-b6dd51366402"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "be7b7664-2778-4a39-8570-d62a064c771c",
+          "title": "GET /topic-subtopic/get-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/topicSubtopic/topicSubtopic.test.js",
+          "file": "/test/topicSubtopic/topicSubtopic.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get list",
+              "fullTitle": "GET /topic-subtopic/get-list get list",
+              "timedOut": false,
+              "duration": 9,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "f4808052-7581-4137-95ae-31039b882d9c",
+              "parentUUID": "be7b7664-2778-4a39-8570-d62a064c771c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f4808052-7581-4137-95ae-31039b882d9c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "6d41b114-a562-43b8-99ac-9a2185fbd4b6",
+          "title": "GET /topic-subtopic/get-list-name",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/topicSubtopic/topicSubtopic.test.js",
+          "file": "/test/topicSubtopic/topicSubtopic.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get topic subtopic list",
+              "fullTitle": "GET /topic-subtopic/get-list-name get topic subtopic list",
+              "timedOut": false,
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-list-name\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "d85f12dd-a8d1-4c7a-ab0a-6e196f492771",
+              "parentUUID": "6d41b114-a562-43b8-99ac-9a2185fbd4b6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d85f12dd-a8d1-4c7a-ab0a-6e196f492771"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "916eba26-05cc-47ef-8980-dd138c927c4b",
+          "title": "GET /topic-subtopic/get-topic-subtopic-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/topicSubtopic/topicSubtopic.test.js",
+          "file": "/test/topicSubtopic/topicSubtopic.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get topic subtopic list",
+              "fullTitle": "GET /topic-subtopic/get-topic-subtopic-list get topic subtopic list",
+              "timedOut": false,
+              "duration": 17,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-topic-subtopic-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "f46a2b91-6837-44e1-9235-6bcea64009b7",
+              "parentUUID": "916eba26-05cc-47ef-8980-dd138c927c4b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f46a2b91-6837-44e1-9235-6bcea64009b7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "65e85822-99ec-47cf-bc40-990ecaecb8ed",
+          "title": "GET /topic-subtopic/get-gallery-list",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/topicSubtopic/topicSubtopic.test.js",
+          "file": "/test/topicSubtopic/topicSubtopic.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get gallery list",
+              "fullTitle": "GET /topic-subtopic/get-gallery-list get gallery list",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-gallery-list\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "dc74b2bb-8960-43bc-89fe-13b8d7afd78a",
+              "parentUUID": "65e85822-99ec-47cf-bc40-990ecaecb8ed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dc74b2bb-8960-43bc-89fe-13b8d7afd78a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2d548609-b4b7-41c0-8cd6-24779c16625e",
+          "title": "GET /users/generate-captcha",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/user/users.test.js",
+          "file": "/test/user/users.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 6 digit captcha text",
+              "fullTitle": "GET /users/generate-captcha returns 6 digit captcha text",
+              "timedOut": false,
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await supertest.get(\"/generate-captcha\");\nexpect(response.status).to.eql(200);\nexpect(response.body.captcha.length).to.eql(6);",
+              "err": {},
+              "uuid": "daa3de7c-05ca-4614-b2a3-2acc1f22362f",
+              "parentUUID": "2d548609-b4b7-41c0-8cd6-24779c16625e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "daa3de7c-05ca-4614-b2a3-2acc1f22362f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "02745c38-8e22-4e6b-8f44-0757a2947e26",
+          "title": "GET /users/all",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/user/users.test.js",
+          "file": "/test/user/users.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns 400 Unauthorized without authentication",
+              "fullTitle": "GET /users/all returns 400 Unauthorized without authentication",
+              "timedOut": false,
+              "duration": 3,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/all\")\n        .expect(400);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "c564c8e5-0a1f-480f-b173-927f6d40fcc8",
+              "parentUUID": "02745c38-8e22-4e6b-8f44-0757a2947e26",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c564c8e5-0a1f-480f-b173-927f6d40fcc8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "47ed34b6-efa9-44af-99ee-1e4c90515a40",
+          "title": "GET /users/all",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/user/users.test.js",
+          "file": "/test/user/users.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns all users",
+              "fullTitle": "GET /users/all returns all users",
+              "timedOut": false,
+              "duration": 11,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/all\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "d261def9-68b8-4e60-b322-c9ec05235446",
+              "parentUUID": "47ed34b6-efa9-44af-99ee-1e4c90515a40",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d261def9-68b8-4e60-b322-c9ec05235446"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "29d90653-dc0f-4299-8b97-4563adf3c0b7",
+          "title": "GET /users/details",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/user/users.test.js",
+          "file": "/test/user/users.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get user details",
+              "fullTitle": "GET /users/details get user details",
+              "timedOut": false,
+              "duration": 25,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/details\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "6cd8ece3-dfda-4a27-ae3e-16ff7f9fede5",
+              "parentUUID": "29d90653-dc0f-4299-8b97-4563adf3c0b7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6cd8ece3-dfda-4a27-ae3e-16ff7f9fede5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8a2694a7-15d7-41b2-8206-98ed42763a14",
+          "title": "GET /users/get-role",
+          "fullFile": "/var/www/html/MauStats/datasupplier/test/user/users.test.js",
+          "file": "/test/user/users.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get user details",
+              "fullTitle": "GET /users/get-role get user details",
+              "timedOut": false,
+              "duration": 6,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n    const response = await supertest\n        .get(\"/get-role\")\n        .set(\"Cookie\", [`auth=${auth}`])\n        .expect(200);\n} catch (error) {\n    throw error;\n}",
+              "err": {},
+              "uuid": "90956af0-1b14-456c-8b58-21a16a464b52",
+              "parentUUID": "8a2694a7-15d7-41b2-8206-98ed42763a14",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "90956af0-1b14-456c-8b58-21a16a464b52"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
