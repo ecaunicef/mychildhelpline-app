@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  maustats-chatbot:
+    image: my-child-helpline-dev:latest
+    hostname: maustats.itechmission.org
+    restart: always
+    ports:
+      - "9093:9093"
+    volumes:
+      - /var/www/html/maustats/downloadReport/:/var/downloads/
+    env_file:
+      - .env

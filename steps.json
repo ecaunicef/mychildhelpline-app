@@ -1,0 +1,992 @@
+{   
+    "en": [
+        {
+            "tag": "Happy",
+            "response": "It's great to hear that! I'm so glad you're feeling this way. You can explore the following modules",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either My Diary or Arcade based on your interest."
+            ]
+        },
+        {
+            "tag": "Excited",
+            "response": "It's great to hear that! I'm so glad you're feeling this way. You can explore the following modules",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either My Diary or Arcade based on your interest."
+            ]
+        },
+        {
+            "tag": "Loved",
+            "response": "It's great to hear that! I'm so glad you're feeling this way. You can explore the following modules",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either My Diary or Arcade based on your interest."
+            ]
+        },
+        {
+            "tag": "Sad",
+            "response": "I'm sorry to hear that you're feeling this way. I know this feeling can be tough, but you might find comfort and support by exploring the following modules",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either Call Us, My Diary, Request for counselling or U-Matter Mental Health Chatline based on your interest."
+            ]
+        },
+        {
+            "tag": "Angry",
+            "response": "I'm sorry to hear that you're feeling this way. Please remember, it's okay to have tough days. You might find comfort or support in the following modules. ",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either My Chill Spot or U-Matter Mental Health Chatline based on your interest."
+            ]
+        },
+        {
+            "tag": "Depressed",
+            "response": "I'm really sorry you're feeling this way. You’re not alone, and you might find comfort by exploring the following modules.",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either Call Us, My Diary, Request for counselling or U-Matter Mental Health Chatline based on your interest."
+            ]
+        },
+        {
+            "tag": "Stressed",
+            "response": "Stress can be overwhelming, but you’ve got this. You might find comfort and support by exploring the following modules",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either Call Us, My Chill Spot or U-Matter Mental Health Chatline based on your interest."
+            ]
+        },
+        {
+            "tag": "Guilty",
+            "response": "I'm here for you! Guilt can feel heavy, but self-compassion is important. You might find some relief by exploring the following modules",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either Call Us or My Diary based on your interest."
+            ]
+        },
+        {
+            "tag": "Lonely",
+            "response": "I'm here for you! Loneliness can be tough, but you can find some comfort by exploring the following modules.",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either Arcade or U-Matter Mental Health Chatline based on your interest."
+            ]
+        },
+        {
+            "tag": "Resilient",
+            "response": "That’s inspiring! Your resilience is your strength. You can explore the following modules",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either My Diary or Arcade based on your interest."
+            ]
+        },
+        {
+            "tag": "Notification",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, click on the bell icon. That's it! Now you can view your notifications."
+            ]
+        },
+        {
+            "tag": "MyDiary",
+            "response": "Its a great choice! You may follow these steps.",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, click on the My Diary. That's it! Now you can view your diary."
+            ]
+        },
+        {
+            "tag": "Arcade",
+            "response": "It's great to hear that!",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, click on the Arcade. That's it! Now you can view your arcade."
+            ]
+        },
+        {
+            "tag": "Counselling",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, click on the Request for counselling. That's it! Now you can request for the counselling."
+            ]
+        },
+        {
+            "tag": "MyRight",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, click on the My Rights."
+            ]
+        },
+        {
+            "tag": "Helpline",
+            "response": "Sure! Here are the steps you must be looking for.",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either Call Us or U-Matter Mental Health Chatline based on your interest."
+            ]
+        },
+        {
+            "tag": "Setting",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, click on the top left corner icon."
+            ]
+        },
+        {
+            "tag": "SelectAvatar",
+            "response": "Wow! Lets go for a change.",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either to click on Profile picture then click on Avatar Option or click on top left setting icon then click on update your profile, based on your interest."
+            ]
+        },
+        {
+            "tag": "CallUs",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either Call Us or U-Matter Mental Health Chatline based on your interest."
+            ]
+        },
+        {
+            "tag": "Hurt",
+            "response": "I'm sorry to hear that you're feeling this way. Please remember, it's okay to have tough days. You might find comfort or support in the following modules.",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, choose either Call Us or Request for counselling based on your interest."
+            ]
+        },
+        {
+            "tag": "government",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                " 1. Go to the Information Kiosk. 2. From there, click on Government Services."
+            ]
+        },
+        {
+            "tag": "Information",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                " 1 .Go to the Information Kiosk. 2. From there, choose options based on your interest."
+            ]
+        },
+        {
+            "tag": "mychillspot",
+            "response": "It's great to hear that!",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, click on My Chill Spot."
+            ]
+        },
+        {
+            "tag": "myspace",
+            "response": "It's great to hear that!",
+            "steps": [
+                "1. Go to the My Space, 2. from there you can choose options based on your interest"
+            ]
+        },
+        {
+            "tag": "parentinghub",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                "1. Go to the Information Kiosk, 2. from there, click on the The Parenting Hub."
+            ]
+        },
+        {
+            "tag": "requestscounselling",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                "1. Go to the My Space, 2. from there, click on Request for counselling."
+            ]
+        },
+        {
+            "tag": "unicef",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                "1. Go to the Information Kiosk, 2. from there, click on UNICEF Eastern Caribbean Area."
+            ]
+        },
+        {
+            "tag": "ResourceUMatter",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                "1. Go to the My Space, 2. from there, click on U-Matter Mental Health Chatline, 3. Go to the Information Kiosk, 4. frome there, click on Resources or My Child Helpline based on your interest."
+            ]
+        },
+        {
+            "tag": "Resource",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                "1. Go to the Information Kiosk, 2. from there, click on Resources or My Child Helpline."
+            ]
+        },
+        {
+            "tag": "MyRightCallUs",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                "1. Go to the My Space, 2. from there, click on Call us, 3. Go to the Information Kiosk, 4. frome there, click on My Rights."
+            ]
+        },
+        {
+            "tag": "CallChatline",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                "1. Go to the My Space, 2. from there, click on Call us or U-Matter Mental Health Chatline based on your interest."
+            ]
+        },
+        {
+            "tag": "CallHelp",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                "1. Go to the My Space, 2. from there, click on Call us, Request for counselling or U-Matter Mental Health Chatline based on your interest."
+            ]
+        },
+        {
+            "tag": "Chatline",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                "1. Go to the My Space, 2. from there, click on U-Matter Mental Health Chatline."
+            ]
+        },
+        {
+            "tag": "FAQ",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                " 1 .Go to the My Space. 2. From there, click on the top left corner icon. 3. Click on the FAQs from the options."
+            ]
+        },
+        {
+            "tag": "CallResource",
+            "response": "Sure! Here are the steps you must be looking for. ",
+            "steps": [
+                "1. Go to the My Space, 2. from there, click on Call us, 3. Go to the Information Kiosk, 4. from there, click on Resources."
+            ]
+        }
+    ],
+
+    "fr": [
+        {
+            "tag": "Happy",
+            "response": "C'est super d'entendre ça! Je suis tellement content que vous vous sentiez de cette façon. Vous pouvez explorer les modules suivants",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez mon journal ou mon arcade en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Excited",
+            "response": "C'est super d'entendre ça! Je suis tellement content que vous vous sentiez de cette façon. Vous pouvez explorer les modules suivants",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez mon journal ou mon arcade en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Loved",
+            "response": "C'est super d'entendre ça! Je suis tellement content que vous vous sentiez de cette façon. Vous pouvez explorer les modules suivants",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez mon journal ou mon arcade en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Sad",
+            "response": "Je suis désolé d'apprendre que vous vous sentez ainsi. Je sais que ce sentiment peut être difficile, mais vous pourriez trouver du confort et du soutien en explorant les modules suivants",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez-nous, appelez-nous, mon journal, demande de conseil ou de la ligne de chat en santé mentale en Tu compte en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Angry",
+            "response": "Je suis désolé d'apprendre que vous vous sentez ainsi. N'oubliez pas, c'est normal d'avoir des journées difficiles. Vous pouvez trouver du confort ou du soutien dans les modules suivants.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez mon spot de refroidissement ou la ligne de chat de santé mentale en Tu compte en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Depressed",
+            "response": "Je suis vraiment désolé que vous ressentiez de cette façon. Vous n'êtes pas seul et vous pourriez trouver du réconfort en explorant les modules suivants.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez-nous, appelez-nous, mon journal, demande de conseil ou de la ligne de chat en santé mentale en Tu compte en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Stressed",
+            "response": "Le stress peut être écrasant, mais vous avez cela. Vous pourriez trouver le confort et le soutien en explorant les modules suivants",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez-nous, appelez-nous, mon point de refroidissement ou la ligne de chat de santé mentale en Tu compte en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Guilty",
+            "response": "Je suis là pour toi! La culpabilité peut être lourde, mais l'auto-compassion est importante. Vous pourriez trouver un certain soulagement en explorant les modules suivants",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez-nous, appelez-nous ou mon journal en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Lonely",
+            "response": "Je suis là pour toi! La solitude peut être difficile, mais vous pouvez trouver un peu de réconfort en explorant les modules suivants.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez Arcade ou Santé mentale Ligne de discussion Tu compte en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Resilient",
+            "response": "C'est inspirant! Votre résilience est votre force. Vous pouvez explorer les modules suivants",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez mon journal ou mon arcade en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Notification",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, cliquez sur l'icône Bell. C'est ça! Vous pouvez maintenant afficher vos notifications."
+            ]
+        },
+        {
+            "tag": "MyDiary",
+            "response": "C'est un excellent choix! Vous pouvez suivre ces étapes.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, cliquez sur mon journal. C'est ça! Vous pouvez maintenant voir votre journal."
+            ]
+        },
+        {
+            "tag": "Arcade",
+            "response": "C'est super d'entendre ça!",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, cliquez sur l'arcade. C'est ça! Vous pouvez maintenant voir votre arcade."
+            ]
+        },
+        {
+            "tag": "Counselling",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, cliquez sur la demande de conseil. C'est ça! Vous pouvez maintenant demander le conseil."
+            ]
+        },
+        {
+            "tag": "MyRight",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, cliquez sur mes droits."
+            ]
+        },
+        {
+            "tag": "Helpline",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez-nous, appelez-nous ou Santé mentale Ligne de discussion Tu compte en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Setting",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, cliquez sur l'icône du coin supérieur gauche."
+            ]
+        },
+        {
+            "tag": "SelectAvatar",
+            "response": "Ouah! Allons pour un changement.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez soit pour cliquer sur la photo du profil, puis cliquez sur l'option Avatar ou cliquez sur l'icône de paramètre en haut à gauche, puis cliquez sur Mettre à jour votre profil, en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "CallUs",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez-nous, appelez-nous ou Santé mentale Ligne de discussion Tu compte en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Hurt",
+            "response": "Je suis désolé d'apprendre que vous vous sentez ainsi. N'oubliez pas, c'est normal d'avoir des journées difficiles. Vous pouvez trouver du confort ou du soutien dans les modules suivants.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, choisissez-nous, appelez-nous ou demandez des conseils en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "government",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Accédez au kiosque d'information. 2. À partir de là, cliquez sur les services gouvernementaux."
+            ]
+        },
+        {
+            "tag": "Information",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1 .Go au kiosque d'information. 2. À partir de là, choisissez des options en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "mychillspot",
+            "response": "C'est super d'entendre ça!",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, cliquez sur mon refroidissement."
+            ]
+        },
+        {
+            "tag": "myspace",
+            "response": "C'est super d'entendre ça!",
+            "steps": [
+                "1. Allez dans mon espace, 2. De là, vous pouvez choisir des options en fonction de votre intérêt"
+            ]
+        },
+        {
+            "tag": "parentinghub",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Accédez au kiosque d'information, 2. À partir de là, cliquez sur le centre parental."
+            ]
+        },
+        {
+            "tag": "requestscounselling",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Allez dans mon espace, 2. De là, cliquez sur la demande de conseil."
+            ]
+        },
+        {
+            "tag": "unicef",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Accédez au kiosque d'information, 2. De là, cliquez sur la zone des Caraïbes de l'Est de l'UNICEF."
+            ]
+        },
+        {
+            "tag": "ResourceUMatter",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Allez dans l'espace mon espace, 2. De là, cliquez sur Santé mentale Ligne de discussion Tu compte, 3. Accédez au kiosque d'information, 4. Frome là-bas, cliquez sur Resources ou mon enfant d'assistance en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Resource",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Accédez au kiosque d'information, 2. De là, cliquez sur Resources ou Ma ligne d'assistance aux enfants."
+            ]
+        },
+        {
+            "tag": "MyRightCallUs",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Allez dans mon espace, 2. À partir de là, cliquez sur Appelez-nous, 3. Accédez au kiosque d'information, 4. Frome là-bas, cliquez sur mes droits."
+            ]
+        },
+        {
+            "tag": "CallChatline",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Allez dans mon espace, 2. À partir de là, cliquez sur Appelez-nous ou Santé mentale Ligne de discussion Tu compte en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "CallHelp",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Allez dans mon espace, 2. À partir de là, cliquez sur Appelez-nous, demandez des conseils ou de la ligne de chat en santé mentale en Tu compte en fonction de votre intérêt."
+            ]
+        },
+        {
+            "tag": "Chatline",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Allez dans mon espace, 2. De là, cliquez sur Santé mentale Ligne de discussion Tu compte."
+            ]
+        },
+        {
+            "tag": "FAQ",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Gardez à mon espace. 2. À partir de là, cliquez sur l'icône du coin supérieur gauche. 3. Cliquez sur les FAQ dans les options."
+            ]
+        },
+        {
+            "tag": "CallResource",
+            "response": "Bien sûr! Voici les étapes que vous devez rechercher.",
+            "steps": [
+                "1. Allez dans mon espace, 2. De là, cliquez sur Appelez-nous, 3. Accédez au kiosque d'information, 4. De là, cliquez sur Resources."
+            ]
+        }
+    ],
+    
+    "es": [
+        {
+            "tag": "Happy",
+            "response": "¡Es genial escuchar eso! Estoy tan contento de que te sientas así. Puedes explorar los siguientes módulos",
+            "steps": [
+                "1.Ve a Mi Espacio. 2. Desde allí, elija Mi diario o Arcade según sus intereses.."
+            ]
+        },
+        {
+            "tag": "Excited",
+            "response": "¡Es genial escuchar eso! Estoy tan contento de que te sientas así. Puedes explorar los siguientes módulos",
+            "steps": [
+                "1.Ve a Mi Espacio. 2. Desde allí, elija Mi diario o Arcade según sus intereses."
+            ]
+        },
+        {
+            "tag": "Loved",
+            "response": "¡Es genial escuchar eso! Estoy tan contento de que te sientas así. Puedes explorar los siguientes módulos",
+            "steps": [
+                "1.Ve a Mi Espacio. 2. Desde allí, elija Mi diario o Arcade según sus intereses."
+            ]
+        },
+        {
+            "tag": "Sad",
+            "response": "Lamento saber que te sientes así. Sé que esta sensación puede ser difícil, pero puede encontrar consuelo y apoyo explorando los siguientes módulos.",
+            "steps": [
+                "1.Ve a Mi Espacio. 2. Desde allí, elija Llámenos, Mi diario, Solicitud de asesoramiento o Línea de chat de salud mental de U-Matter según su interés."
+            ]
+        },
+        {
+            "tag": "Angry",
+            "response": "Lamento saber que te sientes así. Recuerde, está bien tener días difíciles. Puede encontrar comodidad o soporte en los siguientes módulos.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, elija Mi lugar tranquilos o Línea de chat de salud mental de U importa según su interés."
+            ]
+        },
+        {
+            "tag": "Depressed",
+            "response": "Lamento mucho que te sientas así. No estás solo, y es posible que encuentres consuelo explorando los siguientes módulos.",
+            "steps": [
+                "1.Ve a Mi Espacio. 2. Desde allí, elija Llámenos, Mi diario, Solicitud de asesoramiento o Línea de chat de salud mental de U-Matter según su interés."
+            ]
+        },
+        {
+            "tag": "Stressed",
+            "response": "El estrés puede ser abrumador, pero tienes esto. Puede encontrar comodidad y soporte explorando los siguientes módulos.",
+            "steps": [
+                "1.Ve a Mi Espacio. 2. Desde allí, elija Llámenos, Mi diario, Solicitud de asesoramiento o Línea de chat de salud mental de U-Matter según su interés."
+            ]
+        },
+        {
+            "tag": "Guilty",
+            "response": "¡Estoy aquí para ti! La culpa puede sentirse pesada, pero la autocompasión es importante. Es posible que encuentre algo de alivio explorando los siguientes módulos.",
+            "steps": [
+                "1.Vaya a Mi espacio. 2. Desde allí, elija Llámenos o Mi diario según su interés."
+            ]
+        },
+        {
+            "tag": "Lonely",
+            "response": "¡Estoy aquí para ti! La soledad puede ser difícil, pero puede encontrar algo de consuelo explorando los siguientes módulos.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, elija Arcade o Línea de chat de salud mental de U-Matter según su interés."
+            ]
+        },
+        {
+            "tag": "Resilient",
+            "response": "¡Eso es inspirador! Tu resistencia es tu fuerza. Puedes explorar los siguientes módulos",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, elige Mi diario o Arcade según tus intereses."
+            ]
+        },
+        {
+            "tag": "Notification",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, haga clic en el ícono de campana. ¡Eso es todo! Ahora puedes ver tus notificaciones."
+            ]
+        },
+        {
+            "tag": "MyDiary",
+            "response": "¡Es una gran opción! Puede seguir estos pasos.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, haga clic en Mi diario. ¡Eso es todo! Ahora puedes ver tu diario."
+            ]
+        },
+        {
+            "tag": "Arcade",
+            "response": "¡Es genial escuchar eso!",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, haga clic en Arcade. ¡Eso es todo! Ahora puedes ver tu arcade."
+            ]
+        },
+        {
+            "tag": "Counselling",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, haga clic en Solicitud de asesoramiento. ¡Eso es todo! Ahora puedes solicitar el asesoramiento."
+            ]
+        },
+        {
+            "tag": "MyRight",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, haga clic en Mis derechos."
+            ]
+        },
+        {
+            "tag": "Helpline",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, elija Llámenos o Línea de chat de salud mental de U-Matter según su interés."
+            ]
+        },
+        {
+            "tag": "Setting",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, haga clic en el icono de la esquina superior izquierda."
+            ]
+        },
+        {
+            "tag": "SelectAvatar",
+            "response": "¡Guau! Vamos a un cambio.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, elija hacer clic en Imagen de perfil y luego hacer clic en Opción Avatar o hacer clic en el ícono de configuración superior izquierdo y luego hacer clic en actualizar su perfil, según su interés."
+            ]
+        },
+        {
+            "tag": "CallUs",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, elija Llámenos o Línea de chat de salud mental de U importa según su interés."
+            ]
+        },
+        {
+            "tag": "Hurt",
+            "response": "Lamento saber que te sientes así. Recuerde, está bien tener días difíciles. Puede encontrar comodidad o soporte en los siguientes módulos.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, elija Llámenos o Solicite asesoramiento según su interés."
+            ]
+        },
+        {
+            "tag": "government",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya al quiosco de información. 2. Desde allí, haga clic en los servicios gubernamentales."
+            ]
+        },
+        {
+            "tag": "Information",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Go al quiosco de información. 2. Desde allí, elija opciones basadas en su interés."
+            ]
+        },
+        {
+            "tag": "mychillspot",
+            "response": "¡Es genial escuchar eso!",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, haga clic en Mi lugar tranquilo."
+            ]
+        },
+        {
+            "tag": "myspace",
+            "response": "¡Es genial escuchar eso!",
+            "steps": [
+                "1. Vaya a mi espacio, 2. Desde allí puede elegir opciones basadas en su interés"
+            ]
+        },
+        {
+            "tag": "parentinghub",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya al quiosco de información, 2. Desde allí, haga clic en el centro de crianza."
+            ]
+        },
+        {
+            "tag": "requestscounselling",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya a mi espacio, 2. Desde allí, haga clic en Solicitud de asesoramiento."
+            ]
+        },
+        {
+            "tag": "unicef",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya al quiosco de información, 2. Desde allí, haga clic en el área del Caribe del Este de Unicef."
+            ]
+        },
+        {
+            "tag": "ResourceUMatter",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya a mi espacio, 2. Desde allí, haga clic en Salud mental de la materia U Chatline, 3. Vaya al quiosco de información, 4. Frome allí, haga clic en Recursos o una línea de ayuda de mi hijo en función de su interés."
+            ]
+        },
+        {
+            "tag": "Resource",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya al quiosco de información, 2. Desde allí, haga clic en Recursos o a la línea de ayuda de mi hijo."
+            ]
+        },
+        {
+            "tag": "MyRightCallUs",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya a mi espacio, 2. Desde allí, haga clic en Llámenos, 3. Vaya al quiosco de información, 4. Frome allí, haga clic en mis derechos."
+            ]
+        },
+        {
+            "tag": "CallChatline",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya a mi espacio, 2. A partir de ahí, haga clic en Llame o la línea de chat de salud mental de U importa en función de su interés."
+            ]
+        },
+        {
+            "tag": "CallHelp",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya a mi espacio, 2. Desde allí, haga clic en Llámenos, Solicitud de asesoramiento o línea de chat de salud Materia U mental en función de su interés."
+            ]
+        },
+        {
+            "tag": "Chatline",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya a mi espacio, 2. Desde allí, haga clic en la línea de chat de salud Materia U mental."
+            ]
+        },
+        {
+            "tag": "FAQ",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1 .Ve a Mi Espacio. 2. Desde allí, haga clic en el icono de la esquina superior izquierda. 3. Haga clic en las preguntas frecuentes entre las opciones."
+            ]
+        },
+        {
+            "tag": "CallResource",
+            "response": "¡Seguro! Estos son los pasos que debe estar buscando.",
+            "steps": [
+                "1. Vaya a mi espacio, 2. Desde allí, haga clic en Llámenos, 3. Vaya al quiosco de información, 4. Desde allí, haga clic en Recursos."
+            ]
+        }
+    ],
+    "nl": [
+        {
+            "tag": "Happy",
+            "response": "Het is geweldig om dat te horen! Ik ben zo blij dat je je zo voelt. U kunt de volgende modules verkennen",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies vanaf daar mijn dagboek of arcade op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Excited",
+            "response": "Het is geweldig om dat te horen! Ik ben zo blij dat je je zo voelt. U kunt de volgende modules verkennen",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit mijn dagboek of arcade op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Loved",
+            "response": "Het is geweldig om dat te horen! Ik ben zo blij dat je je zo voelt. U kunt de volgende modules verkennen",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit mijn dagboek of arcade op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Sad",
+            "response": "Het spijt me te horen dat u zich zo voelt. Ik weet dat dit gevoel moeilijk kan zijn, maar je kunt troost en ondersteuning vinden door de volgende modules te verkennen",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit, bel ons, mijn dagboek, verzoek om counseling of U-materie geestelijke gezondheid chatlijn op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Angry",
+            "response": "Het spijt me te horen dat u zich zo voelt. Onthoud dat het oké is om zware dagen te hebben. Misschien vindt u comfort of ondersteuning in de volgende modules.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies vanaf daar mijn chill-plek of U-materiaal in de geestelijke gezondheidszorg op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Depressed",
+            "response": "Het spijt me echt dat je je zo voelt. Je bent niet de enige en misschien vindt u troost door de volgende modules te verkennen.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit, bel ons, mijn dagboek, verzoek om counseling of u-materie geestelijke gezondheidskatline op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Stressed",
+            "response": "Stress kan overweldigend zijn, maar je hebt dit. Misschien vindt u comfort en ondersteuning door de volgende modules te verkennen",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit, bel ons, mijn chill-plek of U-materiaal geestelijke gezondheid chatlijn op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Guilty",
+            "response": "Ik ben hier voor jou! Schuld kan zwaar aanvoelen, maar zelfcompassie is belangrijk. Misschien vindt u enige verlichting door de volgende modules te verkennen",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit, bel ons of mijn dagboek op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Lonely",
+            "response": "Ik ben hier voor jou! Eenzaamheid kan moeilijk zijn, maar je kunt wat troost vinden door de volgende modules te verkennen.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit een chatlijn van Arcade of U-Statter Mental Health op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Resilient",
+            "response": "Dat is inspirerend! Uw veerkracht is uw kracht. U kunt de volgende modules verkennen",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit mijn dagboek of arcade op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Notification",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Klik vanaf daar op het Bell -pictogram. Dat is het! Nu kunt u uw meldingen bekijken."
+            ]
+        },
+        {
+            "tag": "MyDiary",
+            "response": "Het is een geweldige keuze! U kunt deze stappen volgen.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Klik vanaf daar op het dagboek. Dat is het! Nu kunt u uw dagboek bekijken."
+            ]
+        },
+        {
+            "tag": "Arcade",
+            "response": "Het is geweldig om dat te horen!",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Klik vanaf daar op de arcade. Dat is het! Nu kunt u uw arcade bekijken."
+            ]
+        },
+        {
+            "tag": "Counselling",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Klik vanaf daar op het verzoek om counseling. Dat is het! Nu kunt u de counseling aanvragen."
+            ]
+        },
+        {
+            "tag": "MyRight",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Klik vanaf daar op de mijn rechten."
+            ]
+        },
+        {
+            "tag": "Helpline",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit, bel ons of U-materie geestelijke gezondheidskatline op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Setting",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Klik vanaf daar op het pictogram linksboven op hoek."
+            ]
+        },
+        {
+            "tag": "SelectAvatar",
+            "response": "Wauw! Laten we gaan voor de verandering.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit kiezen om op Profielfoto te klikken en klik vervolgens op de Avatar -optie of klik op het pictogram linksboven in het instellen en klik vervolgens op uw profiel bijwerken, op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "CallUs",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit, bel ons of U-materie geestelijke gezondheidskatline op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Hurt",
+            "response": "Het spijt me te horen dat u zich zo voelt. Onthoud dat het oké is om zware dagen te hebben. Misschien vindt u comfort of ondersteuning in de volgende modules.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Kies van daaruit, bel ons of vraag om counseling op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "government",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de informatiekiosk. 2. Klik vanaf daar op overheidsdiensten."
+            ]
+        },
+        {
+            "tag": "Information",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Go naar de informatiekiosk. 2. Kies van daaruit opties op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "mychillspot",
+            "response": "Het is geweldig om dat te horen!",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Klik vanaf daar op mijn chill -plek."
+            ]
+        },
+        {
+            "tag": "myspace",
+            "response": "Het is geweldig om dat te horen!",
+            "steps": [
+                "1. Ga naar de mijn ruimte, 2. Van daaruit kunt u opties kiezen op basis van uw interesse"
+            ]
+        },
+        {
+            "tag": "parentinghub",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de informatiekiosk, 2. Klik vanaf daar op de opvoedingshub."
+            ]
+        },
+        {
+            "tag": "requestscounselling",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de Mijn ruimte, 2. Vanaf daar klik op verzoek om counseling."
+            ]
+        },
+        {
+            "tag": "unicef",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de Kioskinformatie, 2. Klik vanaf daar op UNICEF Oost -Caribische gebied."
+            ]
+        },
+        {
+            "tag": "ResourceUMatter",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de Mijn ruimte, 2. Vanaf daar, klik op Salud mental de la materia U Chatline, 3. Ga naar de Kioskinformatie, 4. Frome daar, klik op bronnen of mijn kindhelplijn op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Resource",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de informatiekiosk, 2. Klik vanaf daar op bronnen of mijn hulplijn."
+            ]
+        },
+        {
+            "tag": "MyRightCallUs",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de Mijn ruimte, 2. Vanaf daar, klik op Bel ons, 3. Ga naar de Kioskinformatie, 4. Frome daar, klik op mijn rechten."
+            ]
+        },
+        {
+            "tag": "CallChatline",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de Mijn ruimte, 2. Vanaf daar, klik op bel ons of U-materie-chatline voor geestelijke gezondheid op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "CallHelp",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de Mijn ruimte, 2. Vanaf daar, klik op Bel ons, verzoek om counseling of U-materie geestelijke gezondheid chatlijn op basis van uw interesse."
+            ]
+        },
+        {
+            "tag": "Chatline",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de Mijn ruimte, 2. Vanaf daar klik op de chatlijn voor geestelijke gezondheidszorg."
+            ]
+        },
+        {
+            "tag": "FAQ",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Go naar mijn ruimte. 2. Klik vanaf daar op het pictogram linksboven op hoek. 3. Klik op de veelgestelde vragen vanuit de opties."
+            ]
+        },
+        {
+            "tag": "CallResource",
+            "response": "Zeker! Hier zijn de stappen waarnaar u moet zoeken.",
+            "steps": [
+                "1. Ga naar de Mijn ruimte, 2. Vanaf daar, klik op Bel ons, 3. Ga naar de Kioskinformatie, 4. Klik vanaf daar op bronnen."
+            ]
+        }
+    ]
+}

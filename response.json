@@ -1,0 +1,454 @@
+{
+    "en": {
+        "Happy": [
+            "MyDiary",
+            "Arcade"
+        ],
+        "Excited": [
+            "MyDiary",
+            "Arcade"
+        ],
+        "Loved": [
+            "MyDiary",
+            "Arcade"
+        ],
+        "Sad": [
+            "Call Us",
+            "MyDiary",
+            "Counselling",
+            "Chatline"
+        ],
+        "Angry": [
+            "MyChillSpot",
+            "Chatline"
+        ],
+        "Depressed": [
+            "Call Us",
+            "MyDiary",
+            "Counselling",
+            "Chatline"
+        ],
+        "Stressed": [
+            "Call Us",
+            "MyChillSpot",
+            "Chatline"
+        ],
+        "Guilty": [
+            "Call Us",
+            "MyDiary"
+        ],
+        "Lonely": [
+            "Arcade",
+            "Chatline"
+        ],
+        "Resilient": [
+            "MyDiary",
+            "Arcade"
+        ],
+        "Notification": [
+            "Notifications"
+        ],
+        "MyDiary": [
+            "MyDiary"
+        ],
+        "Arcade": [
+            "Arcade"
+        ],
+        "Counselling": [
+            "Counselling",
+            "Chatline"
+        ],
+        "MyRight": [
+            "MyRights"
+        ],
+        "Setting": [
+            "Settings"
+        ],
+        "SelectAvatar": [
+            "Avatar"
+        ],
+        "ResourceUMatter": [
+            "Resources",
+            "MyChild Helpline",
+            "Chatline"
+        ],
+        "CallUs": [
+            "Call Us"
+        ],
+        "Hurt": [
+            "Call Us",
+            "Counselling"
+        ],
+        "Resource": [
+            "Resources",
+            "MyChild Helpline"
+        ],
+        "Helpline": [
+            "Call Us",
+            "Resources",
+            "MyChild Helpline"
+        ],
+        "MyRightCallUs": [
+            "MyRights",
+            "Call Us"
+        ],
+        "CallChatline": [
+            "Call Us",
+            "Chatline"
+        ],
+        "CallHelp": [
+            "Call Us",
+            "Counselling",
+            "Chatline"
+        ],
+        "Chatline": [
+            "Chatline"
+        ],
+        "FAQ": [
+            "FAQ’s"
+        ],
+        "CallResource": [
+            "Call Us",
+            "Resources"
+        ]
+    },
+    "fr": {
+        "Happy": [
+            "MonJournal",
+            "Arcade"
+        ],
+        "Excited": [
+            "MonJournal",
+            "Arcade"
+        ],
+        "Loved": [
+            "MonJournal",
+            "Arcade"
+        ],
+        "Sad": [
+            "Appelez-nous",
+            "MonJournal",
+            "Conseil",
+            "ChatLigne"
+        ],
+        "Angry": [
+            "MonCoinChill",
+            "ChatLigne"
+        ],
+        "Depressed": [
+            "Appelez-nous",
+            "MonJournal",
+            "Conseil",
+            "ChatLigne"
+        ],
+        "Stressed": [
+            "Appelez-nous",
+            "MonCoinChill",
+            "ChatLigne"
+        ],
+        "Guilty": [
+            "Appelez-nous",
+            "MonJournal"
+        ],
+        "Lonely": [
+            "Arcade",
+            "ChatLigne"
+        ],
+        "Resilient": [
+            "MonJournal",
+            "Arcade"
+        ],
+        "Notification": [
+            "Notifications"
+        ],
+        "MyDiary": [
+            "MonJournal"
+        ],
+        "Arcade": [
+            "Arcade"
+        ],
+        "Counselling": [
+            "Conseil",
+            "ChatLigne"
+        ],
+        "MyRight": [
+            "MesDroits"
+        ],
+        "Setting": [
+            "Paramètres"
+        ],
+        "SelectAvatar": [
+            "Avatar"
+        ],
+        "ResourceUMatter": [
+            "Ressources",
+            "MonEnfant Ligne d'aide",
+            "ChatLigne"
+        ],
+        "CallUs": [
+            "Appelez-nous"
+        ],
+        "Hurt": [
+            "Appelez-nous",
+            "Conseil"
+        ],
+        "Resource": [
+            "Ressources",
+            "MonEnfant Ligne d'aide"
+        ],
+        "Helpline": [
+            "Appelez-nous",
+            "Ressources",
+            "MonEnfant Ligne d'aide"
+        ],
+        "MyRightCallUs": [
+            "MesDroits",
+            "Appelez-nous"
+        ],
+        "CallChatline": [
+            "Appelez-nous",
+            "ChatLigne"
+        ],
+        "CallHelp": [
+            "Appelez-nous",
+            "Conseil",
+            "ChatLigne"
+        ],
+        "Chatline": [
+            "ChatLigne"
+        ],
+        "FAQ": [
+            "FAQ"
+        ],
+        "CallResource": [
+            "Appelez-nous",
+            "Ressources"
+        ]
+    },
+    "es": {
+        "Happy": [
+            "MiDiario",
+            "Arcade"
+        ],
+        "Excited": [
+            "MiDiario",
+            "Arcade"
+        ],
+        "Loved": [
+            "MiDiario",
+            "Arcade"
+        ],
+        "Sad": [
+            "Llámanos",
+            "MiDiario",
+            "Consejería",
+            "LíneaDeChat"
+        ],
+        "Angry": [
+            "MiLugarRelajado",
+            "LíneaDeChat"
+        ],
+        "Depressed": [
+            "Llámanos",
+            "MiDiario",
+            "Consejería",
+            "LíneaDeChat"
+        ],
+        "Stressed": [
+            "Llámanos",
+            "MiLugarRelajado",
+            "LíneaDeChat"
+        ],
+        "Guilty": [
+            "Llámanos",
+            "MiDiario"
+        ],
+        "Lonely": [
+            "Arcade",
+            "LíneaDeChat"
+        ],
+        "Resilient": [
+            "MiDiario",
+            "Arcade"
+        ],
+        "Notification": [
+            "Notificaciones"
+        ],
+        "MyDiary": [
+            "MiDiario"
+        ],
+        "Arcade": [
+            "Arcade"
+        ],
+        "Counselling": [
+            "Consejería",
+            "LíneaDeChat"
+        ],
+        "MyRight": [
+            "MisDerechos"
+        ],
+        "Setting": [
+            "Configuraciones"
+        ],
+        "SelectAvatar": [
+            "Avatar"
+        ],
+        "ResourceUMatter": [
+            "Recursos",
+            "Línea de ayuda para niños",
+            "LíneaDeChat"
+        ],
+        "CallUs": [
+            "Llámanos"
+        ],
+        "Hurt": [
+            "Llámanos",
+            "Consejería"
+        ],
+        "Resource": [
+            "Recursos",
+            "Línea de ayuda para niños"
+        ],
+        "Helpline": [
+            "Llámanos",
+            "Recursos",
+            "Línea de ayuda para niños"
+        ],
+        "MyRightCallUs": [
+            "MisDerechos",
+            "Llámanos"
+        ],
+        "CallChatline": [
+            "Llámanos",
+            "LíneaDeChat"
+        ],
+        "CallHelp": [
+            "Llámanos",
+            "Consejería",
+            "LíneaDeChat"
+        ],
+        "Chatline": [
+            "LíneaDeChat"
+        ],
+        "FAQ": [
+            "Preguntas frecuentes"
+        ],
+        "CallResource": [
+            "Llámanos",
+            "Recursos"
+        ]
+    },
+    "nl": {
+        "Happy": [
+            "MijnDagboek",
+            "Arcade"
+        ],
+        "Excited": [
+            "MijnDagboek",
+            "Arcade"
+        ],
+        "Loved": [
+            "MijnDagboek",
+            "Arcade"
+        ],
+        "Sad": [
+            "Bel Ons",
+            "MijnDagboek",
+            "Begeleiding",
+            "Chatlijn"
+        ],
+        "Angry": [
+            "MijnChillPlek",
+            "Chatlijn"
+        ],
+        "Depressed": [
+            "Bel Ons",
+            "MijnDagboek",
+            "Begeleiding",
+            "Chatlijn"
+        ],
+        "Stressed": [
+            "Bel Ons",
+            "MijnChillPlek",
+            "Chatlijn"
+        ],
+        "Guilty": [
+            "Bel Ons",
+            "MijnDagboek"
+        ],
+        "Lonely": [
+            "Arcade",
+            "Chatlijn"
+        ],
+        "Resilient": [
+            "MijnDagboek",
+            "Arcade"
+        ],
+        "Notification": [
+            "Meldingen"
+        ],
+        "MyDiary": [
+            "MijnDagboek"
+        ],
+        "Arcade": [
+            "Arcade"
+        ],
+        "Counselling": [
+            "Begeleiding",
+            "Chatlijn"
+        ],
+        "MyRight": [
+            "MijnRechten"
+        ],
+        "Setting": [
+            "Instellingen"
+        ],
+        "SelectAvatar": [
+            "Avatar"
+        ],
+        "ResourceUMatter": [
+            "Hulpmiddelen",
+            "MijnKind Hulplijn",
+            "Chatlijn"
+        ],
+        "CallUs": [
+            "Bel Ons"
+        ],
+        "Hurt": [
+            "Bel Ons",
+            "Begeleiding"
+        ],
+        "Resource": [
+            "Hulpmiddelen",
+            "MijnKind Hulplijn"
+        ],
+        "Helpline": [
+            "Bel Ons",
+            "Hulpmiddelen",
+            "MijnKind Hulplijn"
+        ],
+        "MyRightCallUs": [
+            "MijnRechten",
+            "Bel Ons"
+        ],
+        "CallChatline": [
+            "Bel Ons",
+            "Chatlijn"
+        ],
+        "CallHelp": [
+            "Bel Ons",
+            "Begeleiding",
+            "Chatlijn"
+        ],
+        "Chatline": [
+            "Chatlijn"
+        ],
+        "FAQ": [
+            "FAQs"
+        ],
+        "CallResource": [
+            "Bel Ons",
+            "Hulpmiddelen"
+        ]
+    }
+}
