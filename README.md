@@ -127,3 +127,8 @@ RCT_EXPORT_METHOD(stop:(BOOL)onWordBoundary resolve:(RCTPromiseResolveBlock)reso
 ### Need Help?
 
 If you face any issues, feel free to create an issue on the GitHub repository or reach out to the development team.
+
+
+# Explore more from these Useful Links:
+- [**Documentation**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/user-guide)
+
