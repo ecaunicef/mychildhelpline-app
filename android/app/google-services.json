@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "94923196534",
+    "project_id": "unicef-11947",
+    "storage_bucket": "unicef-11947.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94923196534:android:e1f2995b6df90eee603757",
+        "android_client_info": {
+          "package_name": "com.unicef.mychildhelpline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94923196534-tqrctbvvsuskds83ag5ei4k0lri830gr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-PcBUyaplffI14-HAbadUBelRopRkA8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94923196534-tqrctbvvsuskds83ag5ei4k0lri830gr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "94923196534-qf1d1jmhpokh2lo0tce2m0trnov8ou9f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.unicef.childhelp",
+                "app_store_id": "1587159060"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
