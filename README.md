@@ -1,11 +1,12 @@
 # MyChildHelpline App
 The Mobile App project consists of 7 repositories as follows:
 
+
 1. Mobile App: This repository contains the source code for the mobile app.
-	Url: https://github.com/ecaunicef/mychildhelpline-app
-	Branch: main
-	Readme: https://github.com/ecaunicef/mychildhelpline-app/blob/main/README.md
-	License: https://github.com/ecaunicef/mychildhelpline-app/blob/main/LICENSE
+    - Url: https://github.com/ecaunicef/mychildhelpline-app
+    - Branch: main
+    - Readme: https://github.com/ecaunicef/mychildhelpline-app/blob/main/README.md
+    - License: https://github.com/ecaunicef/mychildhelpline-app/blob/main/LICENSE
 
 2. Admin: This repository is used for managing data that comes from the mobile app.
     Url: https://github.com/ecaunicef/admin
