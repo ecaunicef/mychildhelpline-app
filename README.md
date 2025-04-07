@@ -47,9 +47,9 @@ The Mobile App project consists of 7 repositories as follows:
 # Explore more from these Useful Links:
 - [**User Guide**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/user-guide)
 
-- [**Deployment Guide**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/deployment-guide/Deployment-Guide-MyChild-Helpline-Platform.doc)
+- [**Deployment Guide**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/deployment-guide)
 
-- [**Notification Service Guide**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/deployment-guide/Setup-Notifcation-Service-MyChild-Helpline.docx)
+
     
 ## Prerequisites
 
