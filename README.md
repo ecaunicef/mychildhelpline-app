@@ -2,43 +2,43 @@
 The Mobile App project consists of 7 repositories as follows:
 
 
-1. Mobile App: This repository contains the source code for the mobile app.
+**1. Mobile App:** This repository contains the source code for the mobile app.
     - Url: https://github.com/ecaunicef/mychildhelpline-app
     - Branch: main
     - Readme: https://github.com/ecaunicef/mychildhelpline-app/blob/main/README.md
     - License: https://github.com/ecaunicef/mychildhelpline-app/blob/main/LICENSE
 
-2. Admin: This repository is used for managing data that comes from the mobile app.
+**2. Admin:** This repository is used for managing data that comes from the mobile app.
     - Url: https://github.com/ecaunicef/admin
     - Branch: main
     - Readme: https://github.com/ecaunicef/admin/blob/main/README.md
     - License: https://github.com/ecaunicef/admin/blob/main/LICENSE
 
-3. DataSuplier: This is a microservice that provides REST APIs for displaying data.
+**3. DataSuplier:** This is a microservice that provides REST APIs for displaying data.
     - Url: https://github.com/ecaunicef/datasupplier
     - Branch: main
     - Readme: https://github.com/ecaunicef/datasupplier/blob/main/README.md
     - License: https://github.com/ecaunicef/datasupplier/blob/main/LICENSE
 
-4. DataImport: This is another microservice that provides REST APIs for inserting, updating, and deleting data.
+**4. DataImport:** This is another microservice that provides REST APIs for inserting, updating, and deleting data.
     - Url: https://github.com/ecaunicef/dataimport
     - Branch: main
     - Readme: https://github.com/ecaunicef/dataimport/blob/main/README.md
     - License: https://github.com/ecaunicef/dataimport/blob/main/LICENSE
 
-5. ApiGateway: The API Gateway is designed to streamline client-service interactions within a microservices architecture. It acts as the single entry point for client requests, receiving each request, identifying the appropriate microservice, and efficiently routing the request to the intended service.
+**5. ApiGateway:** The API Gateway is designed to streamline client-service interactions within a microservices architecture. It acts as the single entry point for client requests, receiving each request, identifying the appropriate microservice, and efficiently routing the request to the intended service.
     - Url: https://github.com/ecaunicef/apigateway
     - Branch: main
     - Readme: https://github.com/ecaunicef/apigateway/blob/main/README.md
     - License: https://github.com/ecaunicef/apigateway/blob/main/LICENSE
 
-6. ChatHelpline: This service provides a helpline chat feature within the mobile app.
+**6. ChatHelpline:** This service provides a helpline chat feature within the mobile app.
     - Url: https://github.com/ecaunicef/chathelpline
     - Branch: main
     - Readme: https://github.com/ecaunicef/chathelpline/blob/main/README.md
     - License: https://github.com/ecaunicef/chathelpline/blob/main/LICENSE
 
-7. ConstantFile:  This repository contains map GeoJSON files, service key files, and classification files, which are used by the DataSupplier and DataImport services.
+**7. ConstantFile:**  This repository contains map GeoJSON files, service key files, and classification files, which are used by the DataSupplier and DataImport services.
     - Url: https://github.com/ecaunicef/constantfile
     - Branch: main
     - Readme: https://github.com/ecaunicef/constantfile/blob/main/README.md
