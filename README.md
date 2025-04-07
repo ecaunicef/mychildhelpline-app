@@ -2,7 +2,7 @@
 The Mobile App project consists of 7 repositories as follows:
 
 
-**1. Mobile App:** This repository contains the source code for the mobile app.
+1. **Mobile App:** This repository contains the source code for the mobile app.
     - Url: https://github.com/ecaunicef/mychildhelpline-app
     - Branch: main
     - Readme: https://github.com/ecaunicef/mychildhelpline-app/blob/main/README.md
