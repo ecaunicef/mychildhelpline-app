@@ -51,66 +51,183 @@ The Mobile App project consists of 7 repositories as follows:
 
 
     
-## Prerequisites
+
+# 📲 My Child Helpline App
+
+> A mobile application developed with React Native to support helpline-related services for children in need.
+
+---
+
+## ⚙️ Prerequisites
 
 Ensure your system meets these requirements before starting:
 
--   **Ruby**: Version 3.3.6 or later
--   **Java**: Version 17.0.14 or later
--   **Node.js**: Version 18 or later
+- **Ruby**: Version 3.3.6 or later (Mac users only)  
+- **Java**: Version 17.0.14 or later  
+- **Node**: Version 18 or later  
 
-> **Note**: Complete the React Native Environment Setup before proceeding.
+> ✅ _Note: Please complete the full React Native environment setup before running the project._ https://reactnative.dev/docs/set-up-your-environment
 
-## Clone the Repository
+---
 
-Clone the project from GitHub:
+## 📱 React Native Environment Setup
 
-```sh
+### 🖥️ macOS and Linux
+
+#### 1. Install Watchman & Node.js
+
+**Option A: Manual install**
+- [Watchman](https://formulae.brew.sh/formula/watchman)  
+- [Node.js](https://nodejs.org/en/download)
+
+**Option B: Homebrew**
+```bash
+brew install node
+brew install watchman
+```
+
+#### 2. Install Java (JDK 17)
+```bash
+brew install --cask zulu@17
+brew info --cask zulu@17
+```
+
+Locate the JDK path and open it:
+```bash
+open /opt/homebrew/Caskroom/zulu@17/<version>   # Apple Silicon
+# or
+open /usr/local/Caskroom/zulu@17/<version>      # Intel Macs
+```
+
+Double-click the `.pkg` file to install. Then add the following to your `~/.zshrc` or `~/.bash_profile`:
+
+```bash
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+```
+
+#### 3. Install Android Studio
+
+[Download Android Studio](https://developer.android.com/studio)
+
+#### 4. Configure Android SDK
+
+- Open Android Studio → **More Actions → SDK Manager**
+- Under **SDK Platforms**:
+  - Enable _Show Package Details_
+  - Check:
+    - Android SDK Platform 35
+    - Google APIs ARM 64 v8a System Image (for Apple Silicon)
+
+- Under **SDK Tools**:
+  - Enable _Show Package Details_
+  - Check:
+    - Android SDK Build-Tools 35.0.0
+
+#### 5. Set Environment Variables
+
+In your shell config file (`~/.zshrc` or `~/.bash_profile`):
+
+```bash
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+
+📘 **Reference**: [React Native Setup (macOS)](https://reactnative.dev/docs/set-up-your-environment?os=macos)
+
+---
+
+### 🖥️ Windows
+
+#### 1. Install Node.js and Java
+
+**Option A: Chocolatey**
+```bash
+choco install -y nodejs-lts microsoft-openjdk17
+```
+
+**Option B: Manual**
+- [Node.js](https://nodejs.org/en/download)  
+- [OpenJDK 17](https://learn.microsoft.com/en-us/java/openjdk/download)
+
+#### 2. Install Android Studio
+
+[Download Android Studio](https://developer.android.com/studio)
+
+#### 3. Configure Android SDK
+
+- Open Android Studio → **More Actions → SDK Manager**
+- Under **SDK Platforms**:
+  - Enable _Show Package Details_
+  - Check:
+    - Android SDK Platform 35
+    - Google APIs Intel x86 Atom System Image
+
+- Under **SDK Tools**:
+  - Enable _Show Package Details_
+  - Check:
+    - Android SDK Build-Tools 35.0.0
+
+#### 4. Set Environment Variables
+
+- Go to Control Panel → User Accounts → Environment Variables
+- Add:
+  - **ANDROID_HOME**: path to SDK (e.g., `C:\Users\<YourUser>\AppData\Local\Android\Sdk`)
+  - Add to `Path`:
+    - `%ANDROID_HOME%\emulator`
+    - `%ANDROID_HOME%\platform-tools`
+
+📘 **Reference**: [React Native Setup (Windows)](https://reactnative.dev/docs/0.77/set-up-your-environment?os=windows&platform=android)
+
+---
+
+## 🧪 Clone the Repository
+
+```bash
 git clone https://github.com/ecaunicef/mychildhelpline-app.git
 cd mychildhelpline-app
 ```
 
-## Install Dependencies
+---
 
-### Install npm Dependencies:
+## 📦 Install Dependencies
 
-```sh
+```bash
 npm install
 ```
 
-### Install CocoaPods for iOS:
+#### iOS only: Install CocoaPods
 
-```sh
+```bash
 cd ios
 pod install --repo-update
 cd ..
 ```
 
-## Run the Project
+---
 
-### Android:
+## ▶️ Run the Project
 
-Run the following command to launch the app on Android:
-
-```sh
+### Android
+```bash
 npx react-native run-android
 ```
 
-### iOS:
-
-Run the following command to launch the app on iOS:
-
-```sh
+### iOS
+```bash
 npx react-native run-ios
 ```
 
-## Start the Metro Bundler
+---
 
-In a separate terminal, start Metro:
+## 🔁 Start Metro Bundler
 
-```sh
+In a separate terminal:
+
+```bash
 npm start
 ```
+
 
 ---
 
@@ -173,3 +290,8 @@ RCT_EXPORT_METHOD(stop:(BOOL)onWordBoundary resolve:(RCTPromiseResolveBlock)reso
 4. Run the project on your desired platform (Android or iOS) and start Metro.
 5. Update `react-native-tts` configuration for smooth functionality.
 
+---
+
+### Need Help?
+
+If you face any issues, feel free to create an issue on the GitHub repository or reach out to the development team.
