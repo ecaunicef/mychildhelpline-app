@@ -1,4 +1,4 @@
-# Contributing to [Project Name]
+# Contributing to MyChild Helpline
 
 First off, thank you for considering contributing to our project! We appreciate your time and effort.
 
