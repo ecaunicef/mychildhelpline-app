@@ -29,7 +29,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 ### Development Setup
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/ecaunicef/mychildhelpline-app.git
 
 # Install dependencies
 npm install
