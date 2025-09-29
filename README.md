@@ -52,10 +52,13 @@ The Mobile App project consists of 7 repositories as follows:
 
 ---
 
-## OneSignal setup for push notification
+## Push Notification
 
-This is an alternative of Google Firebase, find the docuemnt below for the steps
-- [**Setup Guide**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/user-guide/OneSignalSetup.docx)
+The app is customizable to support any push notification setup.
+- [**Google Firbase Setup Guide**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/user-guide/GoogleFirebaseSetup.docx)
+- [**One Signal Setup Guide**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/user-guide/OneSignalSetup.docx)
+
+---
 
 
 # 📲 My Child Helpline App
