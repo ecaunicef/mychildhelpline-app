@@ -102,6 +102,7 @@ const Notifications = () => {
                     )
                 }}
                 keyExtractor={(item) => item.id}
+                removeClippedSubviews={false}
                 contentContainerStyle={styles.list}
             />
         </Layout>

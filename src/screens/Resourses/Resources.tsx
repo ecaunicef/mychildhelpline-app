@@ -30,8 +30,12 @@ const Resources = () => {
     const [modalVisible2, setModalVisible2] = useState(false)
 
     const getResourcesData = async () => {
+        const getuserDetails: any = await AsyncStorageService.getItem(
+            'user_details'
+        )
         const payload = {
             classificationType: 'helpline_category',
+            country_id: getuserDetails?.country_area_code,
         }
         try {
             const response: any = await getResources(payload)

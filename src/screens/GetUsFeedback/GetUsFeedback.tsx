@@ -194,6 +194,9 @@ const GetUsFeedback = () => {
                                 }
                                 placeholderTextColor="gray"
                             />
+                            <CustomText style={styles.alert}>
+                                e.g: 2464299999
+                            </CustomText>
                         </View>
                         <View style={styles.inputBox}>
                             <CustomText style={styles.label}>
@@ -307,5 +310,12 @@ const styles = StyleSheet.create({
         fontWeight: '400',
         textAlign: 'center',
         color: '#222222',
+    },
+    alert: {
+        color: '#aaa',
+        fontSize: moderateScale(12),
+        lineHeight: moderateScale(18),
+        // marginBottom: moderateScale(5),
+        fontStyle: 'italic',
     },
 })

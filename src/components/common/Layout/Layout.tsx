@@ -35,6 +35,7 @@ const Layout = ({
     deleteButton,
     style,
     onDeleteNotifications,
+    onPress,
 }: any) => {
     const navigation = useNavigation<NativeStackNavigationProp<any>>()
     const [keyboardVisible, setKeyboardVisible] = useState(false)
@@ -82,9 +83,13 @@ const Layout = ({
                 >
                     <TouchableOpacity
                         style={styles.headerContainer}
-                        onPress={() => {
-                            navigation.goBack()
-                        }}
+                        onPress={
+                            onPress
+                                ? onPress
+                                : () => {
+                                      navigation.goBack()
+                                  }
+                        }
                     >
                         {BackButton ? (
                             <AntDesign name="left" size={24} />

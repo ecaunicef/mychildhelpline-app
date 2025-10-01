@@ -24,7 +24,7 @@ import AsyncStorageService from '../../utils/AsyncStorage'
 import ModalEmoji from '../../components/ModalEmoji'
 import localization from '../../utils/localization'
 import MySpace from '../MySpace/MySpace'
-import { Asset, launchCamera } from 'react-native-image-picker'
+import { Asset, CameraOptions, launchCamera } from 'react-native-image-picker'
 import { Avataars } from 'rn-customize-avatar/avataaars'
 import Layout from '../../components/common/Layout/Layout'
 import { getAllNotifications } from '../../services/auth'
@@ -84,9 +84,12 @@ const HomeScreen = (props: any) => {
     }
 
     const handleOpenCamera = async () => {
-        const options = {
+        const options: CameraOptions = {
             mediaType: 'photo' as const,
             includeBase64: true, // Include Base64 string in the response
+            maxWidth: 1024, // Adjust to a suitable value
+            maxHeight: 1024,
+            quality: 0.6,
         }
 
         try {

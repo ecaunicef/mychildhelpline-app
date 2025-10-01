@@ -103,7 +103,7 @@ const RequestForCounselling = () => {
         const getuserDetails: any = await AsyncStorageService.getItem(
             'user_details'
         )
-
+        console.log('this is councelling payload', getuserDetails)
         const payload: any = {
             appointment_date: moment(counseling.appointmentDate).format(
                 'DD-MM-YYYY'
@@ -115,6 +115,7 @@ const RequestForCounselling = () => {
             message: counseling.message,
             id_mobileappuser: getuserDetails?.id,
         }
+        console.log('this is councelling payload', payload)
         try {
             const response = await counsellingUser(payload)
             if (response) {
@@ -182,6 +183,7 @@ const RequestForCounselling = () => {
         }
         try {
             const response: any = await getResources(payload)
+            // console.log('this is ereeere',response)
             if (response?.data) {
                 setResourceData(response.data.data)
             } else {
@@ -395,6 +397,9 @@ const RequestForCounselling = () => {
                             }
                             placeholderTextColor="gray"
                         />
+                        <CustomText style={styles.alert}>
+                            e.g: 2464299999
+                        </CustomText>
                     </View>
                     <View style={styles.inputBox}>
                         <CustomText style={styles.label}>
@@ -547,5 +552,12 @@ const styles = StyleSheet.create({
         fontWeight: '400',
         color: '#333333',
         width: '100%',
+    },
+    alert: {
+        color: '#aaa',
+        fontSize: moderateScale(12),
+        lineHeight: moderateScale(18),
+        marginBottom: moderateScale(5),
+        fontStyle: 'italic',
     },
 })

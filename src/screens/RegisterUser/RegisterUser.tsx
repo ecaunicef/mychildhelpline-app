@@ -9,7 +9,7 @@ import {
     TouchableOpacity,
     Modal,
 } from 'react-native'
-import { launchCamera, Asset } from 'react-native-image-picker'
+import { launchCamera, Asset, CameraOptions } from 'react-native-image-picker'
 import DatePicker from 'react-native-date-picker'
 import React, { useEffect, useRef, useState } from 'react'
 import CustomText from '../../components/basedComponents/customText'
@@ -139,7 +139,6 @@ const RegisterUser = () => {
     async function getUserProfileData() {
         let data = await AsyncStorageService.getItem('UserProfilePic')
         let fcmtoken = await AsyncStorageService.getItem('@fcmToken')
-
         setRegisterState((prevState: any) => ({
             ...prevState,
             deviceToken: fcmtoken,
@@ -220,22 +219,23 @@ const RegisterUser = () => {
             name: registerState?.name,
             gender: registerState?.gender?.name,
             age: age,
+            // area_level: 'AIA014',
             area_level: registerState?.district?.district_area_code,
             language: registerState?.language?.key,
             deviceToken: registerState.deviceToken,
         }
-
         try {
             const response: any = await signUpUser(payload)
             if (response) {
-                await AsyncStorageService.setItem('user_details', {
+                const payload2 = {
                     ...response.data,
                     country_name: registerState?.country?.country_name,
                     country_area_code:
                         registerState?.country?.country_area_code,
                     district_name: registerState.district.district_name,
                     date_of_birth: registerState.dob,
-                })
+                }
+                await AsyncStorageService.setItem('user_details', payload2)
                 await AsyncStorageService.setItem('logedin_key', true)
                 await AsyncStorageService.setItem('location', locationSdetails)
                 showToast('success', localization['registeredsuccessfully'])
@@ -288,15 +288,18 @@ const RegisterUser = () => {
     }, [language])
 
     const handleOpenCamera = async () => {
-        const options = {
+        const options: CameraOptions = {
             mediaType: 'photo' as const,
             includeBase64: true,
+            maxWidth: 1024, // Adjust to a suitable value
+            maxHeight: 1024,
+            quality: 0.6,
         }
 
         try {
             launchCamera(options, async (response) => {
-                if (response.assets && response.assets.length > 0) {
-                    const capturedImage: Asset = response.assets[0]
+                if (response?.assets && response?.assets?.length > 0) {
+                    const capturedImage: Asset = response?.assets?.[0]
                     if (capturedImage.base64) {
                         const base64String = `${capturedImage.base64}`
                         await AsyncStorageService.setItem(
@@ -349,7 +352,7 @@ const RegisterUser = () => {
                 locationSdetails?.countryData?.district_code
         )
 
-        setDistrictList(sortedDistricts.length > 0 ? sortedDistricts : [])
+        setDistrictList(sortedDistricts?.length > 0 ? sortedDistricts : [])
 
         setRegisterState((prevState: any) => ({
             ...prevState,
@@ -819,8 +822,8 @@ const RegisterUser = () => {
                 <Layout ScreenName="Customize Your Avatar" BackButton={false}>
                     <Avataars
                         chipStyle={{ backgroundColor: 'transparent' }}
-                        listBgColor="#"
-                        backgroundColor="#gray"
+                        listBgColor="transparent"
+                        backgroundColor="transparent"
                         onDone={async (base64Image: any) => {
                             await AsyncStorageService.setItem(
                                 'UserProfilePic',

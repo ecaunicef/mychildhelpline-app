@@ -1449,7 +1449,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-skia (1.12.3):
+  - react-native-skia (1.12.4):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2463,7 +2463,7 @@ SPEC CHECKSUMS:
   react-native-geolocation: a2778ea7c815d1f8d3bccaa6fc386b66a55fb469
   react-native-image-picker: 8d06080ecb33269e77e0728f1fd8a16f2f5aad07
   react-native-safe-area-context: d71edcee579673b370c053804f34c40c1f250976
-  react-native-skia: 9ea0809049dcd3cccde0e13e944f94022ad7fce0
+  react-native-skia: 925a5782eb1b262cdcad15f28e1255fb20408054
   react-native-video: 6c3ab3ad722576bbbab9d9172c27f722da1189bd
   react-native-webview: 8f066e0b8efbce454b123f2640be86cac4db7b9c
   React-nativeconfig: e0b63af9169593319fb5ca10d051c9a803549a5d

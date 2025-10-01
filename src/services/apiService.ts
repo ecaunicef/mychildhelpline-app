@@ -9,7 +9,8 @@ import store from '../store/store'
 import { showLoading, hideLoading } from '../store/actions/commonActions'
 
 const axiosInstance: AxiosInstance = axios.create({
-    baseURL: 'https://mychildhelpline.itechmission.org/mychildapigateway/api/', //client
+    baseURL: 'https://portal.mychildhelpline.org/mychildapigateway//api/', //clientserver
+    // baseURL: 'https://mychildhelpline.itechmission.org/mychildapigateway/api/', //client
     headers: {
         'Content-Type': 'application/json',
     },

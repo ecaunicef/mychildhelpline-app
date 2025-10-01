@@ -23,7 +23,7 @@ import DateIcon from '../../../assets/svgs/DateIcon'
 import PenSvg from '../../../assets/svgs/Pen'
 import { useAppSelector } from '../../store/hooks'
 import useLanguage from '../../hooks/useLanguage'
-import { Asset, launchCamera } from 'react-native-image-picker'
+import { Asset, CameraOptions, launchCamera } from 'react-native-image-picker'
 import AsyncStorageService from '../../utils/AsyncStorage'
 import localization from '../../utils/localization'
 import showToast from '../../utils/ToastUtils'
@@ -32,6 +32,7 @@ import moment from 'moment'
 import { Avataars } from 'rn-customize-avatar/avataaars'
 import NoImageSvg from '../../../assets/svgs/NoImage'
 import { deviceHeight } from '../../utils/constants'
+import User from '../../../assets/svgs/User'
 
 const languagesList = [
     { languageName: 'English', key: 'en' },
@@ -109,6 +110,7 @@ const UpdateYourProfile = () => {
     const getUserCountryData = async () => {
         try {
             const data: any = await getUserCountry()
+            console.log('this si country list ', data?.data)
             setCountryList(data?.data)
         } catch (error) {
             console.error('Error fetching data:', error)
@@ -123,6 +125,7 @@ const UpdateYourProfile = () => {
             const userDetails = await AsyncStorageService.getItem(
                 'user_details'
             )
+            console.log('ths is userr', userDetails)
             if (userDetails) {
                 setuserProfileData(userDetails)
             }
@@ -257,9 +260,12 @@ const UpdateYourProfile = () => {
     }
 
     const handleOpenCamera = async () => {
-        const options = {
+        const options: CameraOptions = {
             mediaType: 'photo' as const,
             includeBase64: true,
+            maxWidth: 1024, // Adjust to a suitable value
+            maxHeight: 1024,
+            quality: 0.6,
         }
 
         launchCamera(options, async (response) => {
@@ -307,14 +313,14 @@ const UpdateYourProfile = () => {
     const preFillForm = () => {
         const normalize = (value: string | undefined) =>
             value?.trim().toLowerCase()
-        const selectedLanguageList = languagesList.find(
+        const selectedLanguageList = languagesList?.find(
             (item) => item.key === userProfileData?.language
         )
-        const selectedGenderList = genderList.find(
+        const selectedGenderList = genderList?.find(
             (item: any) => item.name === userProfileData?.gender
         )
 
-        const countryListData = countryList.find(
+        const countryListData = countryList?.find(
             (item: any) =>
                 normalize(item.country_name) ==
                 normalize(userProfileData?.country_name)
@@ -390,12 +396,25 @@ const UpdateYourProfile = () => {
                                     resizeMode="center"
                                 />
                             ) : (
-                                <NoImageSvg
-                                    style={[
-                                        styles.profileImage,
-                                        { borderRadius: parentWidth / 2 },
-                                    ]}
+                                <User
+                                    style={styles.profileImage}
+                                    width={
+                                        smallMobile
+                                            ? moderateScale(80)
+                                            : moderateScale(160)
+                                    }
+                                    height={
+                                        smallMobile
+                                            ? moderateScale(80)
+                                            : moderateScale(160)
+                                    }
                                 />
+                                // <NoImageSvg
+                                //     style={[
+                                //         styles.profileImage,
+                                //         { borderRadius: parentWidth / 2 },
+                                //     ]}
+                                // />
                             )}
                         </View>
                         <View style={[styles.profileImageWrapperEdit]}>

@@ -24,6 +24,10 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>whatsapp</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -35,20 +39,16 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>to upload profile</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This permission is required to upload profile picture from your gallery and photos</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>to open the app</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>We need your location to provide accurate services even when the app is in the background.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>We need your location to provide accurate services in the background.</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>whatsapp</string>
-	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>location to show nearby hospitals, entertainments in app</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This permission is required to upload profile picture from your gallery and photos</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-Bold.ttf</string>
@@ -90,8 +90,12 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

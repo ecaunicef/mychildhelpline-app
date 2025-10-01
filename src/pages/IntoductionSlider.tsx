@@ -17,6 +17,7 @@ import { moderateScale } from 'react-native-size-matters'
 import localization from '../utils/localization'
 import { useNavigation } from '@react-navigation/native'
 import ArrowRightSvg from '../../assets/svgs/ArrowRight'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 const { width: deviceWidth, height: deviceHeight } = Dimensions.get('window')
 
@@ -54,7 +55,7 @@ const IntroductionSlider: React.FC = () => {
         )
         setCurrentIndex(index)
     }
-
+    const { bottom } = useSafeAreaInsets()
     return (
         <View style={styles.container}>
             <FlatList
@@ -116,7 +117,12 @@ const IntroductionSlider: React.FC = () => {
             </View>
             <TouchableOpacity
                 onPress={() => navigation.replace('BeforeWeBegin')}
-                style={styles.nextButton}
+                style={[
+                    styles.nextButton,
+                    {
+                        bottom: 10 + bottom,
+                    },
+                ]}
             >
                 <Text style={styles.nextButtonText}>
                     {currentIndex === slides.length - 1
@@ -214,7 +220,6 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
         gap: 5,
         position: 'absolute',
-        bottom: 30,
         right: 10,
     },
     nextButtonText: { color: '#333333', fontSize: 16 },

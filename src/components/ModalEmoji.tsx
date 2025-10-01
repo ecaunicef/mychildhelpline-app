@@ -394,6 +394,7 @@ const ModalEmoji = () => {
                                         }
                                         numColumns={3}
                                         showsVerticalScrollIndicator={false}
+                                        removeClippedSubviews={false}
                                     />
                                 </View>
                             </View>

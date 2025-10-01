@@ -16,6 +16,7 @@ import ReactNativeBiometrics from 'react-native-biometrics'
 import { Strings } from '../../../utils/Strings'
 import deviceInfoModule from 'react-native-device-info'
 import { User } from '../../../store/User'
+import localization from '../../../utils/localization'
 let uservar = new User()
 
 const deviceHeight = Dimensions.get('window').height
@@ -186,7 +187,7 @@ export default function MyDairyHome(props) {
                         </View>
                         <View>
                             <Text style={styles.bczText}>
-                                {Strings.becauseyou}
+                                {localization?.['pleaseAuthenticateToContinue']}
                             </Text>
                             <TouchableOpacity
                                 onPress={() => authen()}
@@ -197,7 +198,7 @@ export default function MyDairyHome(props) {
                                     style={styles.lockIcon}
                                 />
                                 <Text style={styles.unlockText}>
-                                    {Strings.unlock}
+                                    {localization?.['unlock']}
                                 </Text>
                             </TouchableOpacity>
                         </View>

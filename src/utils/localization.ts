@@ -66,7 +66,7 @@ const localization: any = new LocalizedStrings({
         mychillspotText: 'Relax and refresh yourself!',
         arcade: 'Arcade',
         arcadeText: 'Have spare time? Play one of our classic games.',
-        mentalHealth: 'U-Matter Mental Health Chatline',
+        mentalHealth: 'U-Matter Mental Health Textline',
         mentalHealthText: 'Have something to say? Start chatting now!',
 
         // Emoji Modal
@@ -396,7 +396,7 @@ const localization: any = new LocalizedStrings({
         arcade: 'Arcada',
         arcadeText:
             '¿Tienes tiempo libre? Juega uno de nuestros juegos clásicos.',
-        mentalHealth: 'Línea de Chat U-Matter Salud Mental',
+        mentalHealth: 'Línea de texto de salud mental de U-Matter',
         mentalHealthText: '¿Tienes algo que decir? ¡Empiece a chatear ahora!',
 
         // Emoji Modal
@@ -727,7 +727,7 @@ const localization: any = new LocalizedStrings({
         arcade: 'Arcade',
         arcadeText:
             'Vous avez du temps libre ? Jouez à l’un de nos jeux classiques.',
-        mentalHealth: 'Ligne de discussion sur la santé mentale U-Matter',
+        mentalHealth: 'Texte U-Matter sur la santé mentale',
         mentalHealthText:
             'Vous avez quelque chose à dire ? Commencez à discuter maintenant !',
 
@@ -1062,7 +1062,7 @@ const localization: any = new LocalizedStrings({
         arcade: 'Arcade',
         arcadeText:
             'Heb je wat vrije tijd? Speel een van onze klassieke spellen.',
-        mentalHealth: 'U-Matter geestelijke gezondheidszorg chatlijn',
+        mentalHealth: 'U-Matter Mental Health Textline',
         mentalHealthText: 'Heeft u iets te zeggen? Begin nu met chatten!',
 
         // Emoji Modal

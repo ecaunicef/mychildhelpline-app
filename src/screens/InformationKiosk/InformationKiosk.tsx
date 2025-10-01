@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
     View,
     ScrollView,
     TouchableOpacity,
     StyleSheet,
     SafeAreaView,
+    Linking,
 } from 'react-native'
 import { moderateScale } from 'react-native-size-matters'
 import { useNavigation } from '@react-navigation/native'
@@ -23,65 +24,181 @@ import ResourcesSVG from '../../../assets/svgs/Resources'
 import MyChildHelplineSVG from '../../../assets/svgs/MyChildHelpline'
 import EasternCaribbeanArea from '../../../assets/svgs/EasternCaribbeanArea'
 import localization from '../../utils/localization'
+import AsyncStorageService from '../../utils/AsyncStorage'
 
-const data = [
-    {
-        id: 1,
-        title: 'myrights',
-        subtitle: 'ourrights',
-        icon: <MyRightsSVG width={moderateScale(50)} />,
-        backgroundColor: '#FF669A',
-        fillColor: '#DA1D5E',
-        link: 'MyRights',
-    },
-    {
-        id: 2,
-        title: 'parentinghub',
-        subtitle: 'parentingtitle',
-        icon: <TheParentingHubSVG width={moderateScale(50)} />,
-        backgroundColor: '#FF6247',
-        fillColor: '#E23B1E',
-        link: 'https://www.unicef.org/parenting/',
-    },
-    {
-        id: 3,
-        title: 'gosservices',
-        subtitle: 'gosservicessubtitle',
-        icon: <GovernmentServicesSVG width={moderateScale(50)} />,
-        backgroundColor: '#90D039',
-        fillColor: '#74B918',
-        link: 'https://ab.gov.ag/detail_page.php?page=21',
-    },
-    {
-        id: 4,
-        title: 'resources',
-        subtitle: 'resourcessubtitle',
-        icon: <ResourcesSVG width={moderateScale(50)} />,
-        backgroundColor: '#4BDCEE',
-        fillColor: '#13BFD6',
-        link: 'Resources',
-    },
-    {
-        id: 5,
-        title: 'mychildhelpline',
-        subtitle: 'mychildhelplinesubtitle',
-        icon: <MyChildHelplineSVG width={moderateScale(50)} />,
-        backgroundColor: '#F15D5D',
-        fillColor: '#E11F1F',
-        link: 'https://www.mychildhelpline.org',
-    },
-    {
-        id: 6,
-        title: 'UNICEF',
-        subtitle: 'UNICEFsubtitle',
-        icon: <EasternCaribbeanArea width={moderateScale(50)} />,
-        backgroundColor: '#9194FB',
-        fillColor: '#5357DC',
-        link: 'https://www.unicef.org/easterncaribbean/',
-    },
-]
+const matchCountry = async () => {
+    const userDetails: any = await AsyncStorageService.getItem('user_details')
+    console.log('this is userdateaaaa', userDetails)
+    if (userDetails) {
+        switch (userDetails?.country_area_code) {
+            case 'AIA':
+                return 'https://www.gov.ai/ministry/ministry-of-social-development/department-of-social-development'
+
+            case 'ATG':
+                return 'https://www.connectantigua.com/government-agencies/social-transformation-human-resource-ministry'
+
+            case 'BRB':
+                return 'https://childcareboard.gov.bb/'
+
+            case 'DMA':
+                return 'https://dominica.gov.dm/ministries/health-wellness-and-social-services'
+
+            case 'GRD':
+                return 'https://www.facebook.com/ProtectChildrenGrenada/'
+
+            case 'KNA':
+                return 'https://socialdevelopment.gov.kn/'
+
+            case 'LCA':
+                return 'http://training.www.govt.lc/ministries/ministry-of-equity-social-justice-and-empowerment/human-services'
+
+            case 'MTT':
+                return 'https://www.gov.ms/government/ministries/ministry-of-health-and-social-services/social-services/'
+
+            case 'TCA':
+                return 'https://www.gov.tc/dsd/'
+
+            case 'VCT':
+                return 'https://mobilization.gov.vc/mobilization/'
+
+            case 'VGB':
+                return 'https://www.bvi.gov.vg/departments/social-development-department'
+
+            default:
+                return 'https://www.facebook.com/ProtectChildrenGrenada/'
+        }
+    } else {
+        return 'https://www.facebook.com/ProtectChildrenGrenada/'
+    }
+}
+
+// const data = [
+//     {
+//         id: 1,
+//         title: 'myrights',
+//         subtitle: 'ourrights',
+//         icon: <MyRightsSVG width={moderateScale(50)} />,
+//         backgroundColor: '#FF669A',
+//         fillColor: '#DA1D5E',
+//         link: 'MyRights',
+//     },
+//     {
+//         id: 2,
+//         title: 'parentinghub',
+//         subtitle: 'parentingtitle',
+//         icon: <TheParentingHubSVG width={moderateScale(50)} />,
+//         backgroundColor: '#FF6247',
+//         fillColor: '#E23B1E',
+//         link: 'https://www.unicef.org/parenting/',
+//     },
+//     {
+//         id: 3,
+//         title: 'gosservices',
+//         subtitle: 'gosservicessubtitle',
+//         icon: <GovernmentServicesSVG width={moderateScale(50)} />,
+//         backgroundColor: '#90D039',
+//         fillColor: '#74B918',
+//         // link: 'https://ab.gov.ag/detail_page.php?page=21',
+//         link: matchCountry() ,
+//     },
+//     {
+//         id: 4,
+//         title: 'resources',
+//         subtitle: 'resourcessubtitle',
+//         icon: <ResourcesSVG width={moderateScale(50)} />,
+//         backgroundColor: '#4BDCEE',
+//         fillColor: '#13BFD6',
+//         link: 'Resources',
+//     },
+//     {
+//         id: 5,
+//         title: 'mychildhelpline',
+//         subtitle: 'mychildhelplinesubtitle',
+//         icon: <MyChildHelplineSVG width={moderateScale(50)} />,
+//         backgroundColor: '#F15D5D',
+//         fillColor: '#E11F1F',
+//         link: 'https://www.mychildhelpline.org',
+//     },
+//     {
+//         id: 6,
+//         title: 'UNICEF',
+//         subtitle: 'UNICEFsubtitle',
+//         icon: <EasternCaribbeanArea width={moderateScale(50)} />,
+//         backgroundColor: '#9194FB',
+//         fillColor: '#5357DC',
+//         link: 'https://www.unicef.org/easterncaribbean/',
+//     },
+// ]
 const InformationKiosk = (props: any) => {
     const navigation = useNavigation<NativeStackNavigationProp<any>>() // Add the type to navigation
+    const [homeData, setHomeData] = useState<any>([])
+
+    useEffect(() => {
+        const initializeData = async () => {
+            const countryLink = await matchCountry()
+
+            const tempData = [
+                {
+                    id: 1,
+                    title: 'myrights',
+                    subtitle: 'ourrights',
+                    icon: <MyRightsSVG width={moderateScale(50)} />,
+                    backgroundColor: '#FF669A',
+                    fillColor: '#DA1D5E',
+                    link: 'MyRights',
+                },
+                {
+                    id: 2,
+                    title: 'parentinghub',
+                    subtitle: 'parentingtitle',
+                    icon: <TheParentingHubSVG width={moderateScale(50)} />,
+                    backgroundColor: '#FF6247',
+                    fillColor: '#E23B1E',
+                    link: 'https://www.unicef.org/parenting/',
+                },
+                {
+                    id: 3,
+                    title: 'gosservices',
+                    subtitle: 'gosservicessubtitle',
+                    icon: <GovernmentServicesSVG width={moderateScale(50)} />,
+                    backgroundColor: '#90D039',
+                    fillColor: '#74B918',
+                    link: countryLink, // dynamically resolved
+                },
+                {
+                    id: 4,
+                    title: 'resources',
+                    subtitle: 'resourcessubtitle',
+                    icon: <ResourcesSVG width={moderateScale(50)} />,
+                    backgroundColor: '#4BDCEE',
+                    fillColor: '#13BFD6',
+                    link: 'Resources',
+                },
+                {
+                    id: 5,
+                    title: 'mychildhelpline',
+                    subtitle: 'mychildhelplinesubtitle',
+                    icon: <MyChildHelplineSVG width={moderateScale(50)} />,
+                    backgroundColor: '#F15D5D',
+                    fillColor: '#E11F1F',
+                    link: 'https://www.mychildhelpline.org',
+                },
+                {
+                    id: 6,
+                    title: 'UNICEF',
+                    subtitle: 'UNICEFsubtitle',
+                    icon: <EasternCaribbeanArea width={moderateScale(50)} />,
+                    backgroundColor: '#9194FB',
+                    fillColor: '#5357DC',
+                    link: 'https://www.unicef.org/easterncaribbean/',
+                },
+            ]
+
+            setHomeData(tempData)
+        }
+
+        initializeData()
+    }, [])
 
     return (
         <SafeAreaView style={styles.container}>
@@ -137,7 +254,8 @@ const InformationKiosk = (props: any) => {
                     <CloudBG2 style={styles.dayImage} />
                 </View>
                 <View style={style.cardBox}>
-                    {data.map((item) => (
+                    {/* {data.map((item) => ( */}
+                    {homeData.map((item: any) => (
                         <TouchableOpacity
                             key={item.id}
                             style={[
@@ -145,7 +263,14 @@ const InformationKiosk = (props: any) => {
                                 { backgroundColor: item.backgroundColor },
                             ]}
                             onPress={() => {
-                                if (item.link.startsWith('http')) {
+                                if (
+                                    item.link ==
+                                    'https://www.facebook.com/ProtectChildrenGrenada/'
+                                ) {
+                                    Linking.openURL(
+                                        'https://www.facebook.com/ProtectChildrenGrenada/'
+                                    )
+                                } else if (item.link.startsWith('http')) {
                                     navigation.navigate('WebView', {
                                         url: item.link,
                                         title: localization[item.title],

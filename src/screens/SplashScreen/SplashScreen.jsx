@@ -24,8 +24,6 @@ import LogoSvg from '../../../assets/svgs/Logo'
 import HandSvg from '../../../assets/svgs/Hand'
 import UnicefSvg from '../../../assets/svgs/Unicef'
 import AsyncStorageService from '../../utils/AsyncStorage'
-import notifee from '@notifee/react-native'
-import messaging from '@react-native-firebase/messaging'
 import ReactNativeBiometrics from 'react-native-biometrics'
 import { useAppDispatch } from '../../store/hooks'
 import {
@@ -60,10 +58,12 @@ const SplashScreen = () => {
 
     const initializeApp = async () => {
         let locationdata = await AsyncStorageService.getItem('location')
+        let userdata = await AsyncStorageService.getItem('user_details')
+        console.log('splash ', locationdata, userdata)
         if (!locationdata?.latitude && !locationdata?.longitude) {
             await requestLocationPermission()
         }
-        await requestNotificationPermission()
+        await checkLock()
         if (!locationdata?.latitude && !locationdata?.longitude) {
             await geoLocation()
         }
@@ -95,36 +95,36 @@ const SplashScreen = () => {
         }
     }
 
-    // Function to request notification permission
-    const requestNotificationPermission = async () => {
-        try {
-            const authStatus = await messaging().requestPermission()
-            await notifee.requestPermission()
+    // // Function to request notification permission
+    // const requestNotificationPermission = async () => {
+    //     try {
+    //         const authStatus = await messaging().requestPermission()
+    //         await notifee.requestPermission()
 
-            const enabled =
-                authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
-                authStatus === messaging.AuthorizationStatus.PROVISIONAL
+    //         const enabled =
+    //             authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+    //             authStatus === messaging.AuthorizationStatus.PROVISIONAL
 
-            if (enabled) {
-                await getDeviceToken()
-            }
-        } catch (error) {
-            console.error('Error requesting notification permission:', error)
-        }
-    }
+    //         if (enabled) {
+    //             await getDeviceToken()
+    //         }
+    //     } catch (error) {
+    //         console.error('Error requesting notification permission:', error)
+    //     }
+    // }
 
-    // Function to get device token for FCM
-    const getDeviceToken = async () => {
-        try {
-            const token = await messaging().getToken()
-            if (token) {
-                await AsyncStorageService.setItem('@fcmToken', token)
-            }
-            checkLock()
-        } catch (error) {
-            console.error('Failed to get device token:', error)
-        }
-    }
+    // // Function to get device token for FCM
+    // const getDeviceToken = async () => {
+    //     try {
+    //         const token = await messaging().getToken()
+    //         if (token) {
+    //             await AsyncStorageService.setItem('@fcmToken', token)
+    //         }
+    //         checkLock()
+    //     } catch (error) {
+    //         console.error('Failed to get device token:', error)
+    //     }
+    // }
 
     // Function to check lock and biometric authentication
     const checkLock = async () => {

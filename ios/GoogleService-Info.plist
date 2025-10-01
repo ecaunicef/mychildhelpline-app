@@ -2,18 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>94923196534-qf1d1jmhpokh2lo0tce2m0trnov8ou9f.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.94923196534-qf1d1jmhpokh2lo0tce2m0trnov8ou9f</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAph7hLytavybRik1hIKwsDzlyErCHGOpo</string>
+	<string>AIzaSyBLrbSwlNEuMyH_OPGDxFbq2-sEu0-gjVk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>877657028697</string>
+	<string>94923196534</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.mychildhelpline.test</string>
+	<string>com.unicef.childhelp</string>
 	<key>PROJECT_ID</key>
-	<string>testapp-98caa</string>
+	<string>unicef-11947</string>
 	<key>STORAGE_BUCKET</key>
-	<string>testapp-98caa.firebasestorage.app</string>
+	<string>unicef-11947.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:877657028697:ios:6429fa92496921d5e31948</string>
+	<string>1:94923196534:ios:4f6396f53935978d603757</string>
 </dict>
 </plist>
