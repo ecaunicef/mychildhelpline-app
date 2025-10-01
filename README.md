@@ -55,8 +55,7 @@ The Mobile App project consists of 7 repositories as follows:
 ## Push Notification
 
 The app is customizable to support any push notification setup.
-- [**Google Firbase Setup Guide**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/user-guide/GoogleFirebaseSetup.docx)
-- [**One Signal Setup Guide**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/user-guide/OneSignalSetup.docx)
+- [**Setup Guide**](https://github.com/ecaunicef/mychildhelpline-app/tree/main/docs/manuals/user-guide/PushNotificationSetup.docx)
 
 ---
 
