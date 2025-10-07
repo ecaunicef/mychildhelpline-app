@@ -6,21 +6,22 @@ import store from './src/store/store'
 import Toast from 'react-native-toast-message'
 import Loader from './src/components/common/Loader'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import { PushNotificationService } from './src/utils/PushService/PushService'
+import { NotificationServiceRegistry } from './src/utils/PushService/NotificationServiceFactory'
 
 const App = () => {
-    const pushService = new PushNotificationService()
+    const pushService = NotificationServiceRegistry.getService()
+
     useEffect(() => {
         setupPush()
     }, [])
 
     const setupPush = async () => {
         await pushService.initialize()
-
         await pushService.getDeviceToken()
 
         pushService.onNotification((data) => {
-            console.log('Notification callback hit:', data)
+            console.log('Notification received:', data)
+            // Handle notification data
         })
     }
 
