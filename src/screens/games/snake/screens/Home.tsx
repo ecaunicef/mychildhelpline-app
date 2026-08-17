@@ -2,8 +2,9 @@ import React from 'react'
 import { observer } from 'mobx-react'
 import RNExitApp from 'react-native-exit-app'
 import { StackScreenProps } from '@react-navigation/stack'
-import { StyleSheet, StatusBar, View, Text } from 'react-native'
+import { StyleSheet, View, Text } from 'react-native'
 
+import ScreenStatusBar from '../../../../components/common/ScreenStatusBar'
 import Button from '../components/Button'
 import FlexContainer from '../components/Layout/FlexContainer'
 
@@ -36,9 +37,8 @@ class Home extends React.Component<Props> {
             <FlexContainer
                 style={{ backgroundColor: c.THEMES[theme].secondaryColor }}
             >
-                <StatusBar
-                    translucent={false}
-                    backgroundColor={c.THEMES[theme].secondaryColor}
+                <ScreenStatusBar
+                    color={c.THEMES[theme].secondaryColor}
                     barStyle="light-content"
                 />
                 <Text

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import {
-    StatusBar,
     Alert,
     View,
     StyleSheet,
@@ -10,6 +9,7 @@ import {
 } from 'react-native'
 
 import colors from '../../../utils/colors'
+import ScreenStatusBar from '../../../components/common/ScreenStatusBar'
 import { addNewGamePlayed } from '../AsyncStorage'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import { useNavigation } from '@react-navigation/native'
@@ -142,8 +142,8 @@ const App = () => {
 
     return (
         <View style={styles.Container}>
-            <StatusBar
-                backgroundColor={colors.primary}
+            <ScreenStatusBar
+                color={colors.primary}
                 barStyle="light-content"
             />
             <View

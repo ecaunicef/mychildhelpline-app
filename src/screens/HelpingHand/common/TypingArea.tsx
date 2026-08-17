@@ -3,6 +3,7 @@ import React from 'react'
 import HelpingHandResetButton from './images/HelpingHandResetButton'
 import HelpingHandSendButton from './images/HelpingHandSendButton'
 import { moderateScale } from 'react-native-size-matters'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import localization from '../../../utils/localization'
 
 interface TypingAreaProps {
@@ -18,9 +19,13 @@ const TypingArea: React.FC<TypingAreaProps> = ({
     onReset,
     sendRequest,
 }) => {
+    // Edge-to-edge: the tab bar is hidden on HelpingHand, so nothing else keeps
+    // this bottom-anchored bar clear of the system navigation bar.
+    const insets = useSafeAreaInsets()
+
     return (
         <>
-            <View style={styles.mainBottomSection}>
+            <View style={[styles.mainBottomSection, { bottom: insets.bottom }]}>
                 <TouchableOpacity
                     activeOpacity={1}
                     style={styles.mainBottomSectionReset}

@@ -11,7 +11,6 @@ import {
     Modal,
     Dimensions,
     Text,
-    StatusBar,
     Alert,
     Platform,
     Pressable,
@@ -26,6 +25,7 @@ import SafeAreaView from 'react-native-safe-area-view'
 import { Menu, MenuItem } from 'react-native-material-menu'
 
 import moment from 'moment'
+import ScreenStatusBar from '../../components/common/ScreenStatusBar'
 import { Strings } from '../../utils/Strings'
 import { statusBarHeight } from '../../utils/constants'
 import AsyncStorageService from '../../utils/AsyncStorage'
@@ -207,7 +207,7 @@ export default function MyDairyHome(props) {
             {Platform.OS == 'android' ? null : (
                 <View style={styles.statusBar} />
             )}
-            <StatusBar barStyle="light-content" backgroundColor="#FF8AA2" />
+            <ScreenStatusBar color="#FF8AA2" barStyle="light-content" />
 
             <SafeAreaView style={styles.mianContainer}>
                 <LinearGradient
