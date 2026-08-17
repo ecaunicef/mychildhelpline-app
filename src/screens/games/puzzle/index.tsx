@@ -66,7 +66,7 @@ export default function App() {
         []
     )
     const renderLoading = React.useCallback(
-        (): JSX.Element => (
+        (): React.JSX.Element => (
             <View style={[StyleSheet.absoluteFill, styles.center]}>
                 <ActivityIndicator />
             </View>

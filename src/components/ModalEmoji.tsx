@@ -27,7 +27,7 @@ import CustomText from './basedComponents/customText'
 type EmojiItem = {
     id?: number
     name?: string | undefined
-    iconS?: (width: number, height: number) => JSX.Element
+    iconS?: (width: number, height: number) => React.JSX.Element
     contentHeading?: string
     contentDescription?: string
     route?: { routeName: string; route: string }[]

@@ -9,6 +9,7 @@ import HelpingHandSVG from '../../assets/svgs/HelpingHand'
 import { moderateScale } from 'react-native-size-matters'
 import InformationKiosk from '../screens/InformationKiosk/InformationKiosk'
 import localization from '../utils/localization'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 const styles = StyleSheet.create({
     tabicon: {
@@ -20,6 +21,8 @@ const BottomTab = createBottomTabNavigator()
 
 //bottom navigation in app
 export default function BottomTabNavigator() {
+    const insets = useSafeAreaInsets()
+
     return (
         <BottomTab.Navigator
             initialRouteName="MySpace"
@@ -33,7 +36,11 @@ export default function BottomTabNavigator() {
                     borderTopLeftRadius: moderateScale(30),
                     borderTopRightRadius: moderateScale(30),
                     paddingTop: 26,
-                    height: 70,
+                    // React Navigation treats an explicit height as the total
+                    // border-box height and still reserves insets.bottom as
+                    // padding, so the inset has to be added here or it eats
+                    // into the 70 (edge-to-edge is enforced from Android 15).
+                    height: 70 + insets.bottom,
                     elevation: 0,
                     display: route.name === 'HelpingHand' ? 'none' : 'flex',
                 },
