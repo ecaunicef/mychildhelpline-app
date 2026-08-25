@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 #import <Firebase.h>
 #import <React/RCTBundleURLProvider.h>
+#import <ReactAppDependencyProvider/RCTAppDependencyProvider.h>
 
 @implementation AppDelegate
 
@@ -11,6 +12,9 @@
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
+  // Required since RN 0.77: supplies the codegen'd third-party TurboModule and
+  // Fabric component list. RCTReactNativeFactory raises if this is nil.
+  self.dependencyProvider = [RCTAppDependencyProvider new];
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }

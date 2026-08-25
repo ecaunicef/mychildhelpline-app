@@ -49,6 +49,8 @@
 	<string>location to show nearby hospitals, entertainments in app</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This permission is required to upload profile picture from your gallery and photos</string>
+	<key>RCTNewArchEnabled</key>
+	<true/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-Bold.ttf</string>
