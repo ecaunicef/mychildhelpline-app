@@ -1,0 +1,80 @@
+# OSX
+.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+ios/.xcode.env.local
+**/.xcode.env.local
+
+# Android/IntelliJ
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Bundle artifacts
+*.jsbundle
+
+# Ruby / CocoaPods
+**/Pods/
+/vendor/bundle/
+
+# Temporary files created by Metro
+.metro-health-check*
+metro.config.js.bak
+
+# testing
+/coverage
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# NOTE — deliberately NOT ignoring emitted TypeScript output.
+#
+# `tsc` ignores tsconfig.json (and its `noEmit: true`) when files are passed on
+# the command line, e.g. `npx tsc src/**/*.ts`. That emits a .js next to each .ts
+# source. Because Metro resolves `js` before `ts`, those artifacts then silently
+# shadow the real sources and the app bundles stale code. This happened on
+# 2025-10-07 and went unnoticed for ten months (22 files).
+#
+# src/ also contains 28 legitimate hand-written .js files, so a blanket ignore
+# would be both wrong and counterproductive: if tsc ever re-emits, you want the
+# stray files loud in `git status`, not hidden.
+#
+# Always run type checks as `npx tsc --noEmit` with no file arguments.

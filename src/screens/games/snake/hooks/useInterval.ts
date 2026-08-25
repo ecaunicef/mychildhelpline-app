@@ -1,8 +1,8 @@
 import { useRef, useLayoutEffect } from 'react'
 
 const useInterval = (callback: () => void, delay: number) => {
-    const savedCallback = useRef<() => void>()
-    const intervalRef = useRef<NodeJS.Timeout>()
+    const savedCallback = useRef<() => void>(undefined)
+    const intervalRef = useRef<NodeJS.Timeout>(undefined)
 
     useLayoutEffect(() => {
         savedCallback.current = callback

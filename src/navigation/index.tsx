@@ -41,7 +41,7 @@ import About from '../screens/About/About'
 import LeafletMap from '../screens/Test/Test'
 
 export default function Navigation() {
-    const navigationRef = React.useRef<any>()
+    const navigationRef = React.useRef<any>(undefined)
     const dispatch = useAppDispatch()
     const initializeLanguage: any = async () => {
         try {

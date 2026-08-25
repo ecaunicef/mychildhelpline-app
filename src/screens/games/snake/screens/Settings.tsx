@@ -5,7 +5,6 @@ import BackgroundColor from 'react-native-background-color'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import {
     StyleSheet,
-    StatusBar,
     View,
     Text,
     Platform,
@@ -16,6 +15,7 @@ import {
     widthPercentageToDP as wp,
 } from 'react-native-responsive-screen'
 
+import ScreenStatusBar from '../../../../components/common/ScreenStatusBar'
 import Icon from 'components/Icon'
 import Header from 'components/Header'
 import Button from 'components/Button'
@@ -61,9 +61,8 @@ const Settings = ({ navigation }: Props) => {
                     backgroundColor: c.THEMES[selectedTheme].secondaryColor,
                 }}
             >
-                <StatusBar
-                    translucent={false}
-                    backgroundColor={c.THEMES[selectedTheme].secondaryColor}
+                <ScreenStatusBar
+                    color={c.THEMES[selectedTheme].secondaryColor}
                     barStyle="light-content"
                 />
                 <Header

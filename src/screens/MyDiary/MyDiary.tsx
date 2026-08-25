@@ -22,6 +22,7 @@ import CustomText from '../../components/basedComponents/customText'
 import { moderateScale, scale } from 'react-native-size-matters'
 import { useIsFocused, useNavigation } from '@react-navigation/native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import Layout from '../../components/common/Layout/Layout'
 import CommentTopSectionBoth from '../../../assets/svgs/CommentTopSectionBoth'
 import AsyncStorageService from '../../utils/AsyncStorage'
@@ -44,6 +45,9 @@ const MyDiary = (props: any) => {
 
     const navigation = useNavigation<any>()
     const isFocused = useIsFocused()
+    // Edge-to-edge: this screen is outside the tab navigator, so nothing else
+    // keeps the bottom-anchored FAB clear of the system navigation bar.
+    const insets = useSafeAreaInsets()
 
     const { navigate, goBack } = props.navigation
     const [diaryList, setDiaryList] = React.useState<DiaryItem[]>([])
@@ -528,7 +532,7 @@ const MyDiary = (props: any) => {
                 </KeyboardAvoidingView>
             </Modal>
             <AntDesign
-                style={styles.fab}
+                style={[styles.fab, { bottom: insets.bottom }]}
                 name="pluscircle"
                 size={50}
                 color="#D72E50"

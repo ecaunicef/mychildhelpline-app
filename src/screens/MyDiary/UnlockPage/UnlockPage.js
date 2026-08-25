@@ -4,7 +4,6 @@ import {
     Image,
     Dimensions,
     Text,
-    StatusBar,
     Platform,
     StyleSheet,
     TouchableOpacity,
@@ -13,6 +12,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import LinearGradient from 'react-native-linear-gradient'
 import { useNavigation } from '@react-navigation/native'
 import ReactNativeBiometrics from 'react-native-biometrics'
+import ScreenStatusBar from '../../../components/common/ScreenStatusBar'
 import { Strings } from '../../../utils/Strings'
 import deviceInfoModule from 'react-native-device-info'
 import { User } from '../../../store/User'
@@ -161,7 +161,7 @@ export default function MyDairyHome(props) {
 
     return (
         <>
-            <StatusBar barStyle="dark-content" backgroundColor="#FF8AA2" />
+            <ScreenStatusBar color="#FF8AA2" barStyle="dark-content" />
             {/* lock view comp */}
             <View style={styles.container}>
                 <LinearGradient

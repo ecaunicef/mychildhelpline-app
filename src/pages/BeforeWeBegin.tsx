@@ -20,11 +20,15 @@ import SelectDropdown from 'react-native-select-dropdown'
 import ArrowRightSvg from '../../assets/svgs/ArrowRight'
 import DateIcon from '../../assets/svgs/DateIcon'
 import CommentTopSectionBoth from '../../assets/svgs/CommentTopSectionBoth'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 const { height } = Dimensions.get('window')
 const bgHeight = height
 
 const BeforeWeBegin = () => {
+    // Edge-to-edge: without this the last item (the Next button) sits under the
+    // system navigation bar and cannot be scrolled clear of it.
+    const insets = useSafeAreaInsets()
     const [text, onChangeText] = React.useState('')
     const [isChecked, setIsChecked] = useState(false)
 
@@ -39,7 +43,10 @@ const BeforeWeBegin = () => {
     ]
 
     return (
-        <ScrollView bounces={false}>
+        <ScrollView
+            bounces={false}
+            contentContainerStyle={{ paddingBottom: insets.bottom }}
+        >
             <View style={styles.bgBefore}>
                 <Image
                     source={require('../../assets/image/BeforeWeBegin.png')}

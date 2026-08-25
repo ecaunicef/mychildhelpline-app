@@ -5,7 +5,6 @@ import { StackScreenProps } from '@react-navigation/stack'
 import BackgroundColor from 'react-native-background-color'
 import {
     StyleSheet,
-    StatusBar,
     View,
     Text,
     Animated,
@@ -16,6 +15,7 @@ import {
     widthPercentageToDP as wp,
 } from 'react-native-responsive-screen'
 
+import ScreenStatusBar from '../../../../components/common/ScreenStatusBar'
 import FlexContainer from 'components/Layout/FlexContainer'
 
 import SettingsStore from 'stores/SettingsStore'
@@ -80,9 +80,8 @@ const Loading = (props: Props) => {
         <FlexContainer
             style={{ backgroundColor: c.THEMES[theme].secondaryColor }}
         >
-            <StatusBar
-                translucent={false}
-                backgroundColor={c.THEMES[theme].secondaryColor}
+            <ScreenStatusBar
+                color={c.THEMES[theme].secondaryColor}
                 barStyle="light-content"
             />
             <View style={styles.wrapper}>
